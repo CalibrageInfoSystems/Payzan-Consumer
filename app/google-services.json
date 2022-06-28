@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "608604000838",
+    "firebase_url": "https://payzan-52a7a.firebaseio.com",
+    "project_id": "payzan-52a7a",
+    "storage_bucket": "payzan-52a7a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:608604000838:android:7df054cf3112e748",
+        "android_client_info": {
+          "package_name": "com.calibrage.payzanconsumer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "608604000838-c6rntr8o7498c3r2sl1aslic9l91ibji.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.calibrage.payzanconsumer",
+            "certificate_hash": "1c1c4d4dd59ef2a2c2b93650bdb4634193117f74"
+          }
+        },
+        {
+          "client_id": "608604000838-7m26ut13ijk78iq2le48s4in7jbsto6c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxfUajfM_tsEk6BiCbwikmHIZ30R1LM-k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "608604000838-7m26ut13ijk78iq2le48s4in7jbsto6c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

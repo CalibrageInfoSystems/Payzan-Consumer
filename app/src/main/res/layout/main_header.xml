@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/id_appbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_img_height"
+        android:gravity="center"
+        android:src="@mipmap/home_logo"
+        android:background="@mipmap/home_logo"
+        android:layout_marginBottom="-10dp"
+       />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/accent"
+        app:layout_scrollFlags="enterAlways"
+        app:title="payzan"
+        app:titleTextColor="@color/accent"
+        app:titleTextAppearance="@style/Toolbar.TitleText">
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:textColor="@color/white_new"-->
+            <!--android:id="@+id/titleTxt"-->
+            <!--android:gravity="center"-->
+            <!--android:visibility="gone"-->
+            <!--android:text="@string/app_name"/>-->
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_search"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_notification"/>
+    </RelativeLayout>
+</LinearLayout>

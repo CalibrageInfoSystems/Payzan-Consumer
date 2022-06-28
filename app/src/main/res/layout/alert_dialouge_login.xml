@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="0dip"
+
+    android:orientation="vertical"
+    android:paddingBottom="15dip"
+    android:paddingLeft="0dip"
+    android:paddingRight="0dip"
+    android:paddingTop="0dip" >
+
+    <LinearLayout
+        android:id="@+id/ll_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/accent"
+
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+
+            android:text="@string/payzan_app"
+            android:textSize="16sp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/dialogMessage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_title_bar"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:maxLines="10"
+        android:padding="10dip"
+        android:scrollbars="vertical"
+        android:text="@string/please_login"
+        android:textColor="@color/black"
+        android:textSize="14sp" >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialogMessage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/ok_btn"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@color/accent"
+            android:textAllCaps="false"
+
+            android:text="@string/ok"
+            android:textColor="@color/white" >
+        </Button>
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:background="@color/accent"
+
+
+            android:text="@string/cancel"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/bottom_nav_height"
+    android:background="@color/White"
+    android:scrollbars="none">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--  Email Label -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_header_height"
+            android:background="@color/DarkRed"
+            android:visibility="gone">
+
+            <ImageView
+
+                android:layout_width="@dimen/edittext_height"
+                android:layout_height="@dimen/img_back_height"
+                android:layout_gravity="center" />
+
+            <com.calibrage.payzanconsumer.framework.controls.CommonTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/login"
+                android:textColor="@color/White"
+                android:textSize="@dimen/txt_FontSize" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/lyt_margin_left"
+            android:paddingRight="@dimen/lyt_margin_right">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/btn_margin_bottom"
+                android:src="@mipmap/home_logo"
+                android:visibility="gone" />
+
+            <com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout
+                android:id="@+id/inp_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/lyt_margin_top"
+                app:errorEnabled="true"
+                app:hintEnabled="false">
+
+                <com.calibrage.payzanconsumer.framework.controls.CommonEditText
+                    android:id="@+id/txt_Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edt_height"
+                    android:layout_marginBottom="@dimen/edt_bottom_margin"
+                    android:background="@drawable/roundededittext"
+                    android:gravity="center_vertical"
+                    android:hint="@string/mobile"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="@dimen/edt_text_pading_left"
+                    android:textSize="@dimen/edt_FontSize" />
+            </com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout>
+
+            <com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout
+                android:id="@+id/inp_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="true">
+
+                <com.calibrage.payzanconsumer.framework.controls.CommonEditText
+
+                    android:id="@+id/txt_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/edt_height"
+                    android:layout_marginBottom="@dimen/edt_bottom_margin"
+                    android:background="@drawable/roundededittext"
+                    android:gravity="center_vertical"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="@dimen/edt_text_pading_left"
+                    android:textSize="@dimen/edt_FontSize" />
+
+            </com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout>
+
+            <com.calibrage.payzanconsumer.framework.controls.CommonTextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/txt_height"
+                android:layout_gravity="end"
+                android:layout_margin="@dimen/txt_margin"
+                android:gravity="center"
+                android:text="Can not Login..?"
+                android:textColor="@color/Maroon"
+                android:textSize="@dimen/txt_FontSize" />
+
+            <!-- Login button -->
+            <com.calibrage.payzanconsumer.framework.controls.CommonTextView
+                android:id="@+id/txt_terms"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/tenSP" />
+
+            <com.calibrage.payzanconsumer.framework.controls.CommonButton
+                android:id="@+id/btnLogin"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/btn_height"
+                android:layout_marginTop="@dimen/btn_margin_top"
+                android:background="@drawable/roundbutton"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:textColor="@color/White" />
+            <!-- Link to Registration Screen -->
+            <com.calibrage.payzanconsumer.framework.controls.CommonTextView
+                android:id="@+id/link_to_register"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/txt_margin"
+                android:layout_marginTop="@dimen/txt_margin"
+                android:gravity="center"
+                android:text="@string/don_t_have_account_signup"
+                android:textColor="#263631"
+                android:textSize="@dimen/txt_FontSize"
+                android:visibility="gone" />
+
+            <com.calibrage.payzanconsumer.framework.controls.CommonTextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/txt_height"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/txt_margin"
+                android:gravity="center"
+                android:text="- or -"
+                android:visibility="gone" />
+
+            <!--  <com.calibrage.payzanconsumer.framework.controls.CommonButton
+                  android:id="@+id/fbBtn"
+                  android:layout_width="match_parent"
+                  android:layout_height="@dimen/btn_height"
+                  android:layout_marginLeft="@dimen/btn_margin_left"
+                  android:layout_marginRight="@dimen/btn_margin_right"
+                  android:background="@drawable/roundbutton_facebook"
+                  android:text="@string/signin_with_facebook"
+                  android:textAllCaps="false"
+                  android:textColor="@color/White" />
+
+              <com.calibrage.payzanconsumer.framework.controls.CommonButton
+                  android:id="@+id/button"
+                  android:layout_width="match_parent"
+                  android:layout_height="@dimen/btn_height"
+                  android:layout_marginLeft="@dimen/btn_margin_left"
+                  android:layout_marginRight="@dimen/btn_margin_right"
+                  android:layout_marginTop="@dimen/btn_margin_top"
+                  android:background="@drawable/round_google_button"
+                  android:text="@string/signin_with_google"
+                  android:textAllCaps="false"
+                  android:textColor="@color/White"
+                  android:visibility="gone" />-->
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtChooseLanguage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_gray"
+        android:gravity="center"
+        android:padding="@dimen/layout_margin_top"
+        android:text="Choose your language"
+        android:textColor="@color/black"
+        android:textSize="@dimen/twentyDP"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:id="@+id/english_lang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_margin_top"
+        android:layout_marginRight="@dimen/layout_margin_top"
+        android:layout_marginTop="@dimen/twentyDP"
+        android:background="@drawable/roundededittext"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="@dimen/tenDp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/layout_margin_top"
+            android:text="English"
+            android:textColor="@color/black"
+            android:textSize="@dimen/layout_margin_top" />
+
+        <ImageView
+            android:id="@+id/imgSelect1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/language_tick_mark"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/sinhala_lang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_margin_top"
+        android:layout_marginRight="@dimen/layout_margin_top"
+        android:layout_marginTop="@dimen/layout_margin_top"
+        android:background="@drawable/roundededittext"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="@dimen/tenDp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/layout_margin_top"
+            android:text="Sinhala / සිංහල"
+            android:textColor="@color/black"
+            android:textSize="@dimen/layout_margin_top" />
+
+        <ImageView
+            android:id="@+id/imgSelect2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/language_tick_mark"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/tamil_lang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_margin_top"
+        android:layout_marginRight="@dimen/layout_margin_top"
+        android:layout_marginTop="@dimen/layout_margin_top"
+        android:background="@drawable/roundededittext"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="@dimen/tenDp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/layout_margin_top"
+            android:text="Tamil / தமிழ் "
+            android:textColor="@color/black"
+            android:textSize="@dimen/layout_margin_top" />
+
+        <ImageView
+            android:id="@+id/imgSelect3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/language_tick_mark"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/continueBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/thirtyDp"
+        android:background="@drawable/roundbutton"
+        android:text="@string/contin"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/fifteen" />
+
+</LinearLayout>

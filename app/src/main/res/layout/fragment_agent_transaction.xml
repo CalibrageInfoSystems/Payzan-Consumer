@@ -1,0 +1,168 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="calibrage.payzan.fragments.agent.Agent_Transaction_Fragment"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/lyt_search"
+        android:layout_below="@+id/framelayout">
+
+        <com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchtransaction">
+            <!--style="@style/EditTextStyle"-->
+            <com.calibrage.payzanconsumer.framework.controls.CommonEditText
+                android:paddingLeft="15dp"
+                android:id="@+id/mobileEdt"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edt_height"
+                android:background="@drawable/agent_transaction"
+                android:gravity="center_vertical"
+                android:layout_margin="6dp"
+                android:hint="@string/search_transactionid"
+                android:drawableLeft="@drawable/head_search_icon"
+                android:inputType="numberDecimal"
+                />
+        </com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout>
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <com.calibrage.payzanconsumer.framework.controls.CommonTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fromtext"
+        android:text="From:"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginLeft="6dp"/>
+
+  <com.calibrage.payzanconsumer.framework.controls.CommonEditText
+      android:layout_width="110dp"
+      android:layout_height="40dp"
+      android:focusable="false"
+      android:id="@+id/fromEdit"
+      android:background="@drawable/border_accentcolor_button"/>
+
+    <com.calibrage.payzanconsumer.framework.controls.CommonTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/totext"
+        android:text="To:"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"/>
+
+    <com.calibrage.payzanconsumer.framework.controls.CommonEditText
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:focusable="false"
+        android:id="@+id/toEdit"
+        android:background="@drawable/border_accentcolor_button"/>
+
+    <com.calibrage.payzanconsumer.framework.controls.CommonButton
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:text="GO"
+        android:id="@+id/gobtn"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/border_fill_searchtransaction"/>
+</LinearLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/light_gray"
+    android:orientation="horizontal"
+    android:layout_marginLeft="6dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="6dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/dolyt"
+        android:layout_marginLeft="6dp">
+    <com.calibrage.payzanconsumer.framework.controls.CommonTextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/datetxt"
+    android:text="Date "
+    />
+    <com.calibrage.payzanconsumer.framework.controls.CommonTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/operatxt"
+        android:text="Operator"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/tmlyt"
+        android:layout_marginLeft="140dp">
+        <com.calibrage.payzanconsumer.framework.controls.CommonTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tranidtxt"
+            android:text="Transaction ID "
+            />
+        <com.calibrage.payzanconsumer.framework.controls.CommonTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mobtxt"
+            android:layout_marginLeft="10dp"
+            android:text="Mobile NO"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/atlyt"
+        android:layout_marginLeft="320dp">
+        <com.calibrage.payzanconsumer.framework.controls.CommonTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/amttxt"
+            android:text="Amount "
+            />
+        <com.calibrage.payzanconsumer.framework.controls.CommonTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/typetxt"
+            android:text="type"
+            />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycleragenttran">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

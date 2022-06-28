@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="0dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.calibrage.payzanconsumer.framework.controls.CommonTextView
+            android:id="@+id/ordernoTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="8dp"
+            android:text="@string/order_no"
+            android:textColor="@color/black" />
+
+        <com.calibrage.payzanconsumer.framework.controls.CommonTextView
+            android:id="@+id/ordernoDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/txt_margin"
+            android:text="@string/date_order"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/txt_FontSize"/>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/ordernoTxt"
+            android:layout_marginBottom="@dimen/txt_margin"
+            android:background="@color/very_light_gray" />
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="@dimen/img_height"
+            android:layout_height="@dimen/img_width"
+            android:layout_below="@+id/divider"
+            android:layout_margin="@dimen/img_wallet_padding"
+            android:src="@drawable/ic_email"
+            app:civ_border="true"
+            app:civ_border_color="@color/very_light_gray"
+            app:civ_border_width="1dp"
+            android:id="@+id/logo"/>
+
+        <com.calibrage.payzanconsumer.framework.controls.CommonTextView
+            android:textSize="@dimen/txt_FontSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider"
+            android:layout_toRightOf="@+id/logo"
+            android:text="Recharge of tata docomo mobile 8121969202"
+            android:textColor="@color/black"
+            android:layout_toLeftOf="@+id/amount"
+            android:id="@+id/description"/>
+
+        <com.calibrage.payzanconsumer.framework.controls.CommonTextView
+            android:textSize="@dimen/txt_FontSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider"
+            android:layout_alignParentRight="true"
+            android:text="$110"
+            android:id="@+id/amount"
+            android:layout_margin="@dimen/txt_margin"
+            android:textColor="@color/black"/>
+
+        <com.calibrage.payzanconsumer.framework.controls.CommonTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/paymentStatus"
+            android:layout_below="@+id/description"
+            android:layout_toRightOf="@+id/logo"
+            android:text="Your order is successful"
+            android:layout_margin="@dimen/txt_margin"
+            android:textSize="@dimen/txt_FontSize"/>
+
+        <com.calibrage.payzanconsumer.framework.controls.CommonButton
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/edittext_height"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/amount"
+            android:layout_margin="@dimen/btn_margin_bottom"
+            android:text="Retry"
+            android:textColor="@color/accent"
+            android:textAllCaps="false"
+            android:elevation="0dp"
+            android:background="@drawable/border_accentcolor_button"
+           />
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

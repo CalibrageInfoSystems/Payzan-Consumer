@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ఫాయిజన్ ఆప్ప్</string>
+    <string name="facebook_app_id">267297907115951</string>
+    <string name="fb_login_protocol_scheme">fb267297907115951</string>
+    <string name="com_facebook_loginview_log_in_button">కనెక్ట్</string>
+    <string name="com_facebook_loginview_log_out_button">మీ లాగ్అవుట్</string>
+  <!--  <string name="terms_and_conditions">లాగిన్ చేయడం ద్వారా, మీరు మా టర్మ్ &amp; షరతులు మరియు గోప్యతా విధానం</string>-->
+    <string name="terms_and_conditions">By loging in,you accept our Term\'s  &amp; Conditions and Privacy Policy</string>
+    <string name="canotlogin"> లాగిన్ కాదు ..?</string>
+    <string name="mobile_recharge_sname">"మొబైల్ రీఛార్జ్ &amp;  బిల్లు చెల్లించండి"</string>
+    <string name="dth_sname">"డిటిహెచ్"</string>
+    <string name="water_sname">"నీటి"</string>
+    <string name="landline_sname">"ల్యాండ్లైన్"</string>
+    <string name="cabletv_sname">"కేబుల్ TV"</string>
+    <string name="datacard_sname">"డేటా కార్డ్"</string>
+    <string name="electricity_sname">"విద్యుత్"</string>
+    <string name="broadband_sname">"బ్రాడ్బ్యాండ్"</string>
+    <string name="wallet_sname">" నా పర్సు"</string>
+    <string name="offer_sname">"ఆఫర్స్"</string>
+    <string name="login_sname">"లాగిన్"</string>
+    <string name="add_money_to_wallet">వాలెట్కు డబ్బు జోడించండి</string>
+    <string name="enter_amount_to_be_added_in_the_wallet">సంచిలో జతచేయవలసిన మొత్తాన్ని నమోదు చేయండి</string>
+    <string name="enter_promo_code">ప్రోమో కోడ్ను నమోదు చేయండి</string>
+    <string name="add_money">డబ్బుని జోడించండి</string>
+    <string name="subscriber_id">సబ్స్క్రయిబర్ ID</string>
+    <string name="select_operator">ఆపరేటర్ని ఎంచుకోండి</string>
+    <string name="amount">మొత్తం</string>
+    <string name="signin_with_facebook">Facebook తో సైన్ ఇన్ చేయండి</string>
+    <string name="password">పాస్వర్డ్</string>
+    <string name="mobile">మొబైల్ </string>
+    <string name="login">లాగిన్</string>
+    <string name="don_t_have_account_signup">ఖాతాకు డాన్ లేదు ..? సైన్అప్</string>
+    <string name="signin_with_google">Google తో సైన్ ఇన్ చేయండి</string>
+    <string name="signin_with_google_test">Google తో సైన్ ఇన్ చేయండి</string>
+    <string name="mobile_number">మొబైల్ సంఖ్య</string>
+    <string name="current_operator">ప్రస్తుత ఆపరేటర్</string>
+    <string name="talktime_topup">టాక్టైమ్ టాప్అప్</string>
+    <string name="special_recharge">స్పెషల్ రీఛార్జ్</string>
+    <string name="proceed_to_recharge">రీఛార్జ్ చేయడానికి ముందుకు వెళ్లండి</string>
+    <string name="select_district">జిల్లాను ఎంచుకోండి</string>
+    <string name="service_no">సర్వీస్ సంఖ్య</string>
+    <string name="consumer_no">వినియోగదారుల సంఖ్య</string>
+    <string name="proceed_to_pay_bill">బిల్ చెల్లించడానికి కొనసాగించండి</string>
+    <string name="landline">ల్యాండ్లైన్</string>
+    <string name="operator">ఆపరేటర్</string>
+    <string name="number_with_std_code">STD కోడ్తో సంఖ్య</string>
+    <string name="select_circle">సర్కిల్ను ఎంచుకోండి</string>
+    <string name="browse_plans">బ్రౌజ్ చేయండి</string>
+    <string name="recharge">రీఛార్జ్</string>
+    <string name="profile">ప్రొఫైల్</string>
+    <string name="female">మహిళ</string>
+    <string name="male">పురుషుడు</string>
+    <string name="gender">జెండర్</string>
+    <string name="mobile_number_signup">మొబైల్ సంఖ్య</string>
+    <string name="email_optional">ఇమెయిల్ (తప్పనిసరి)</string>
+    <string name="create_password">పాస్వర్డ్ సృష్టించండి</string>
+    <string name="sign_up">సైన్ అప్ చేయండి</string>
+    <string name="or">- లేదా -</string>
+    <string name="order_no">ఆర్డర్ సంఖ్య1234567</string>
+    <string name="date_order">15 సెప్టెంబర్ 2017 08:15 PM</string>
+    <string name="comments">వ్యాఖ్య (ఐచ్ఛిక)</string>
+    <string name="send_money">డబ్బు పంపండి</string>
+    <string name="select_board">బోర్డ్ను ఎంచుకోండి</string>
+    <string name="already_have_account">Already have account? Login</string>
+    <string name="about_us">"మా గురించి"</string>
+    <string name="addcard">"క్రొత్త కార్డ్ని జోడించండి"</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">హలో ఖాళీ శకలాలు</string>
+    <string name="data_card_number">డేటా కార్డ్ సంఖ్య</string>
+    <string name="confirm_password">పాస్వర్డ్ను నిర్ధారించండి</string>
+    <string name="Update_Password">పాస్వర్డ్ని నవీకరించండి</string>
+
+    <string name="search_transactionid">శోధన లావాదేవీ ఐడి, మొబైల్ సంఖ్య ...</string>
+    <string name="AgentTransaction">లావాదేవీ</string>
+    <string name="AgentCommision">కమిషన్</string>
+    <string name="enter_card_details">కార్డ్ వివరాలను నమోదు చేయండి</string>
+    <string name="card_number">కార్డ్ సంఖ్య</string>
+    <string name="expirydate">గడువు తీరు తేదీ</string>
+    <string name="card_holder_name">గుర్తింపు కార్డు కలిగిన వారి పేరు </string>
+    <string name="card_label">కార్డ్ లేబుల్ (ఐచ్ఛికం)</string>
+    <string name="savethis_card">మరింత లావాదేవీ కోసం ఈ కార్డును సేవ్ చేయండి</string>
+    <string name="savecard">కార్డ్ని సేవ్ చేయండి</string>
+    <string name="month">నెల</string>
+    <string name="year">సంవత్సరం</string>
+    <string name="currentpassword">ప్రస్తుత పాస్వర్డ్</string>
+    <string name="newpassword">కొత్త పాస్వర్డ్</string>
+    <string name="retypepassword">క్రొత్త పాస్ వర్డ్ ను టైప్ చేయండి</string>
+    <string name="changepassword">పాస్ వర్డ్ ను మార్చండి</string>
+    <string name="orderhistory">ఆర్డర్ చరిత్ర</string>
+    <string name="termsofservices">సేవా నిబంధనలు</string>
+    <string name="savecards">సేవ్ చేసిన కార్డులు</string>
+    <string name="accountno">4166xxxxxxxxxxx000000|Bank Name</string>
+    <string name="savecardslock">మీ వివరాలు ద్వారా 128 బిట్ ఎన్క్రిప్షన్ ద్వారా సురక్షితం xxxx</string>
+    <string name="note">Note:పాస్ వర్డ్ మార్పు విజయవంతమైతే, మీరు మళ్ళీ లాగిన్ కావాలి</string>
+
+
+    <string-array name="month_arrays">
+        <item>నెల</item>
+        <item>జనవరి</item>
+        <item>ఫిబ్రవరి </item>
+        <item>మార్చి</item>
+        <item> ఏప్రిల్</item>
+        <item>మే</item>
+        <item>జూన్ </item>
+        <item>జూలై</item>
+        <item> ఆగస్టు</item>
+        <item>సెప్టెంబర్</item>
+        <item>అక్టోబర్</item>
+        <item>నవంబర్</item>
+        <item>డిసెంబర్</item>
+    </string-array>
+
+
+    <string name="scan_barcode_button">బార్కోడ్ను స్కాన్ చేయండి</string>
+    <string name="no_barcode_captured">ఏ బార్కోడ్ను స్వాధీనం చేసుకోలేదు</string>
+    <string name="barcode_error_format">"బార్కోడ్ను చదవడంలో లోపం: %1$s"</string>
+
+    <!-- Strings related to barcode scanner -->
+    <string name="ok">అలాగే</string>
+    <string name="permission_camera_rationale">కెమెరా యాక్సెస్ గుర్తింపు కోసం అవసరం</string>
+    <string name="no_camera_permission">కెమెరా అనుమతి లేనందున ఈ అనువర్తనం అమలు కాదు. అనువర్తనం ఇప్పుడు నిష్క్రమించబడుతుంది.</string>
+    <string name="low_storage_error">తక్కువ పరికర నిల్వ కారణంగా ఫేస్ డిటెక్టర్ ఆధారపడటం డౌన్లోడ్ చేయబడదు</string>
+
+    <string-array name="year_arrays">
+        <item>Year</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+
+    </string-array>
+
+
+    <string name="payzan_wallet">పేజన్ వల్లేట్</string>
+    <string name="recharge_and_bill_payments">రీఛార్జ్ మరియు బిల్ చెల్లింపులు</string>
+    <string name="wallet_balance">వాలెట్ సంతులనం :</string>
+
+    <string name="paysemd">చెల్లించటానికి/పంపండి</string>
+    <string name="add_withdraw" >జోడించు/ఉపసంహరణ</string>
+
+    <string name="MyTransactions" >నా లావాదేవీలు</string>
+    <string name="home">హోమ్</string>
+    <string name="wallet">పర్సులు</string>
+    <string name="offers">ఆఫర్లు</string>
+
+
+    <string name="contin">Continue / కొనసాగించు </string>
+    <string name="last_name">Last Name</string>
+</resources>

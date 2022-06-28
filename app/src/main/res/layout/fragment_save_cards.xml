@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_new"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/main_header" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/savecardrecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fifteen">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <com.calibrage.payzanconsumer.framework.controls.CommonButton
+        android:id="@+id/savecardbtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/btn_margin_left"
+        android:layout_marginTop="@dimen/eighty"
+        android:background="@drawable/roundbutton"
+        android:text="@string/add_new_card"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fifteen"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/payment_lock_icon" />
+
+        <com.calibrage.payzanconsumer.framework.controls.CommonTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/savecardslock"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+</LinearLayout>

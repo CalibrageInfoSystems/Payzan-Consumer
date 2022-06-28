@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="lyt_margin_left">16dp</dimen>
+    <dimen name="lyt_margin_right">16dp</dimen>
+    <dimen name="lyt_margin_top">16dp</dimen>
+    <dimen name="lyt_margin_bottom">25dp</dimen>
+    <dimen name="btn_register_margin">15dp</dimen>
+    <dimen name="btn_mobile_margin">15dp</dimen>
+    <dimen name="lyt_margin">8dp</dimen>
+    <dimen name="lyt_margin_height">16dp</dimen>
+
+    <dimen name="btn_margin_top_mobile_rechagre">25dp</dimen>
+    <!--common TextView sizes-->
+    <dimen name="txt_height">60dp</dimen>
+    <dimen name="txt_height20">40dp</dimen>
+    <dimen name="txt_width">4dp</dimen>
+    <dimen name="txt_FontSize">24dp</dimen>
+    <dimen name="txt_margin">20dp</dimen>
+    <dimen name="txt_padding">6dp</dimen>
+
+    <dimen name="spn_txt_FontSize">16dp</dimen>
+    <dimen name="text_size_inner_edit_text">13sp</dimen>
+    <!--common Edittext Sizes-->
+    <dimen name="edt_height">60dp</dimen>
+    <dimen name="edt_widtht">4dp</dimen>
+    <dimen name="edt_FontSize">18sp</dimen>
+    <dimen name="edt_bottom_margin">25sp</dimen>
+    <dimen name="edt_text_pading_left">8dp</dimen>
+    <dimen name="edt_text_pading_">15dp</dimen>
+
+    <dimen name="margin_top_no_records">00dp</dimen>
+    <dimen name="btn_margin_pick">45dp</dimen>
+
+    <dimen name="edt_hint_FontSize">16sp</dimen>
+
+    <!--common button sizes-->
+    <dimen name="btn_height">60dp</dimen>
+    <dimen name="btn_width">4dp</dimen>
+    <dimen name="btn_FontSize">18dp</dimen>
+    <dimen name="btn_margin_top">20dp</dimen>
+    <dimen name="btn_margin_left">50dp</dimen>
+    <dimen name="btn_margin_bottom">20dp</dimen>
+    <dimen name="btn_margin_right">50dp</dimen>
+
+    <dimen name="btn1_height">50dp</dimen>
+    <dimen name="btn1_font">18dp</dimen>
+
+    <!--common image sizes-->
+    <dimen name="img_height">80dp</dimen>
+    <dimen name="img_width">80dp</dimen>
+
+    <dimen name="img_wallet1_height">50dp</dimen>
+    <dimen name="img_wallet1_width">50dp</dimen>
+
+    <!--Header View Sizes-->
+    <dimen name="header_image_height">4dp</dimen>
+    <dimen name="header_image_width">4dp</dimen>
+
+
+    <!--Search bar Sizes-->
+    <dimen name="search_image_height">4dp</dimen>
+    <dimen name="search_image_width">4dp</dimen>
+
+    <dimen name="search_bar_height">4dp</dimen>
+    <dimen name="search_bar_width">4dp</dimen>
+
+    <!--ListView Row sizes-->
+
+    <dimen name="lst_image_height">4dp</dimen>
+    <dimen name="lst_image_width">4dp</dimen>
+
+    <dimen name="lst_txt_height">4dp</dimen>
+    <dimen name="lst_txt_width">4dp</dimen>
+
+
+    <!--ListView Row Item Sizes - - End  -->
+    <dimen name="font_header">18sp</dimen>
+
+    <!--Login page-->
+    <dimen name="login_header_height">60dp</dimen>
+    <dimen name="login_header_width">4dp</dimen>
+
+
+    <dimen name="img_back_height">40dp</dimen>
+    <dimen name="img_back__width">4dp</dimen>
+
+
+    <dimen name="img_wallet_height">40dp</dimen>
+    <dimen name="img_wallet_width">40dp</dimen>
+    <dimen name="img_wallet_margin">8dp</dimen>
+    <dimen name="img_wallet_padding">4dp</dimen>
+
+    <dimen name="logo_height">50dp</dimen>
+    <dimen name="logo_width">250dp</dimen>
+    <dimen name="logo_margin">100dp</dimen>
+
+    <dimen name="header_home_background">60dp</dimen>
+    <dimen name="header_text_size">18sp</dimen>
+    <!--radio button-->
+    <dimen name="rdo_margin">8dp</dimen>
+    <dimen name="rdo_width">200dp</dimen>
+    <dimen name="rdo_height">40dp</dimen>
+
+
+    <dimen name="card_corner_radius_home">8dp</dimen>
+    <dimen name="card_corner_elevation_home">6dp</dimen>
+
+    <dimen name="card_image_width">60dp</dimen>
+    <dimen name="card_image_height">60dp</dimen>
+
+    <dimen name="card_view_width">128dp</dimen>
+    <dimen name="card_view_height">135dp</dimen>
+
+    <dimen name="rcv_margin_left">4dp</dimen>
+    <dimen name="rcv_margin_right">4dp</dimen>
+    <dimen name="toolbar_height">65dp</dimen>
+    <dimen name="toolbar_text_size">20sp</dimen>
+    <dimen name="toolbar_img_height">160dp</dimen>
+    <dimen name="bottom_nav_height">60dp</dimen>
+
+
+    <!--Home view design-->
+    <dimen name="lyt_home_height">15dp</dimen>
+    <dimen name="lyt_home_width">4dp</dimen>
+    <dimen name="lyt_home_margin_top">8dp</dimen>
+    <dimen name="lyt_home_margin_right">16dp</dimen>
+    <dimen name="lyt_home_margin_left">16dp</dimen>
+    <dimen name="lyt_home_margin_bottom">7dp</dimen>
+
+    <dimen name="banner_image_width">300dp</dimen>
+    <dimen name="banner_height_height">160dp</dimen>
+
+
+    <!---Add mmoney text-->
+    <dimen name="txt_money_size">24sp</dimen>
+    <dimen name="txt_money_padding">6dp</dimen>
+    <dimen name="txt_money_margin">6dp</dimen>
+
+    <!---wallwt card view-->
+   <!-- <dimen name="card_wallet_layout">160dp</dimen>-->
+    <dimen name="card_wallet_layout">200dp</dimen>
+
+    <!--tab_layout_txt-->
+    <dimen name="tab_txt_size">14sp</dimen>
+    <!--&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+
+
+
+
+
+
+
+    <!--<dimen name="edittext_text_input_layout_padding">4dp</dimen>-->
+    <!--<dimen name="layout_marin_left">16dp</dimen>-->
+    <!--<dimen name="layout_marin_right">16dp</dimen>-->
+    <!--<dimen name="layout_marin_bottom">16dp</dimen>-->
+    <!--<dimen name="layout_margin_top">16dp</dimen>-->
+    <!--<dimen name="edittext_margin">4dp</dimen>-->
+    <!--<dimen name="edittext_height">40dp</dimen>-->
+    <!--<dimen name="main_layout_head_bottom_margin">12dp</dimen>-->
+    <!--<dimen name="image_width">80dp</dimen>-->
+    <!--<dimen name="image_height">80dp</dimen>-->
+    <!--<dimen name="text_header_size">18sp</dimen>-->
+    <!--<dimen name="button_size">40dp</dimen>-->
+    <!--<dimen name="edittext_text_size">16sp</dimen>-->
+    <!--<dimen name="edittext_text_input_layout_padding">6dp</dimen>-->
+    <!--<dimen name="layout_marin_left">28dp</dimen>-->
+    <!--<dimen name="layout_marin_right">28dp</dimen>-->
+    <!--<dimen name="layout_marin_bottom">28dp</dimen>-->
+    <!--<dimen name="layout_margin_top">28dp</dimen>-->
+    <!--<dimen name="edittext_margin">28dp</dimen>-->
+    <!--<dimen name="edittext_height">60dp</dimen>-->
+    <!--<dimen name="main_layout_head_bottom_margin">18dp</dimen>-->
+    <!--<dimen name="image_width">135dp</dimen>-->
+    <!--<dimen name="image_height">135dp</dimen>-->
+    <!--<dimen name="text_header_size">28dp</dimen>-->
+    <!--<dimen name="button_size">60dp</dimen>-->
+    <!--<dimen name="edittext_text_size">26sp</dimen>-->
+
+
+    <!--<dimen name="bottom_nav_height">80dp</dimen>-->
+
+    <!--<dimen name="fiveDp">8dp</dimen>-->
+    <!--<dimen name="leven">18dp</dimen>-->
+    <!--<dimen name="tenDp">16dp</dimen>-->
+
+
+    <!--<dimen name="fifteen">22dp</dimen>-->
+    <dimen name="imageDp">40dp</dimen>
+    <dimen name="userimageWidthDp">75dp</dimen>
+    <dimen name="userimageHeightDp">150dp</dimen>
+
+    <!--extra dimensions -->
+    <dimen name="twoDp">2dp</dimen>
+    <dimen name="threeDp">6dp</dimen>
+    <dimen name="fourDp">8dp</dimen>
+    <dimen name="fiveDp">10dp</dimen>
+    <dimen name="sixDp">12dp</dimen>
+    <dimen name="eightDp">16dp</dimen>
+    <dimen name="tenDp">20dp</dimen>
+    <dimen name="leven">22dp</dimen>
+    <dimen name="tweleveDP">24dp</dimen>
+    <dimen name="fifteen">30dp</dimen>
+    <dimen name="eigteen">36dp</dimen>
+
+    <dimen name="tweleveDP_plan">24dp</dimen>
+
+
+    <dimen name="twentyDP">34dp</dimen>
+    <dimen name="twentyFiveDP">40dp</dimen>
+    <dimen name="thirtyDp">50dp</dimen>
+    <dimen name="thirtyfiveDp">50dp</dimen>
+    <dimen name="sixty">100dp</dimen>
+    <dimen name="eighty">140dp</dimen>
+    <dimen name="hunderedDp">160dp</dimen>
+    <dimen name="fourtyDp">60dp</dimen>
+
+
+    <!--<dimen name="hunderedDp">160dp</dimen>-->
+
+
+    <!--<dimen name="header_home_background">36dp</dimen>-->
+    <!--<dimen name="header_text_size">18sp</dimen>-->
+
+    <!--&lt;!&ndash;extra dimensions &ndash;&gt;-->
+    <!--<dimen name="twoDp">3dp</dimen>-->
+    <!--<dimen name="fourDp">6dp</dimen>-->
+
+    <!--<dimen name="eightDp">12dp</dimen>-->
+    <!--<dimen name="tweleveDP">18dp</dimen>-->
+
+
+    <!--<dimen name="eigteen">36dp</dimen>-->
+
+    <!--<dimen name="banner_image_width">300dp</dimen>-->
+    <!--<dimen name="banner_height_height">160dp</dimen>-->
+
+    <!--<dimen name="card_corner_radius_home">8dp</dimen>-->
+    <!--<dimen name="card_corner_elevation_home">8dp</dimen>-->
+
+    <!--<dimen name="card_image_width">42dp</dimen>-->
+    <!--<dimen name="card_image_height">42dp</dimen>-->
+    <!--<dimen name="tenSP">16dp</dimen>-->
+
+    <!--<dimen name="toolbar_height">52dp</dimen>-->
+    <!--<dimen name="toolbar_text_size">20sp</dimen>-->
+
+    <!--<dimen name="card_view_width">100dp</dimen>-->
+    <!--<dimen name="card_view_height">110dp</dimen>-->
+
+
+    <dimen name="profile_layout_height">160dp</dimen>
+    <dimen name="margin_top_five">10dp</dimen>
+    <dimen name="margin_left_twenty">40dp</dimen>
+    <dimen name="margin_right_twenty">40dp</dimen>
+
+
+    <dimen name="supp_txt1_height">50dp</dimen>
+    <dimen name="supp_txt2_height">60dp</dimen>
+
+    <dimen name="txt_fontSize">14dp</dimen>
+
+
+    <dimen name="img_paddingLeft">100dp</dimen>
+    <dimen name="img_paddingRight">30dp</dimen>
+
+    <dimen name="img_marginLeft">550dp</dimen>
+
+    <dimen name="imagersDp">24dp</dimen>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/accent">
+    <ImageView
+        android:id="@+id/counterBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        />
+
+    <com.calibrage.payzanconsumer.framework.controls.CommonTextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15"
+        android:textSize="@dimen/edt_FontSize"
+        android:layout_gravity="end"
+        android:gravity="center"
+        android:background="@drawable/round_background"
+       android:textColor="@color/whitepure"
+        android:textStyle="bold"/>
+
+    <!--<TextView-->
+        <!--android:id="@+id/custom_text_count"-->
+        <!--style="@style/text_default"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+       <!---->
+        <!--android:maxLines="2"-->
+        <!--android:text="45"-->
+        <!--android:maxEms="3"-->
+        <!--android:visibility="visible"-->
+        <!--android:layout_below="@+id/custom_text"-->
+        <!--android:background="@drawable/round_background"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:textColor="@color/white" />-->
+
+</FrameLayout>

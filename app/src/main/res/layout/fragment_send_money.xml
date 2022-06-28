@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/lyt_margin_top"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/lyt_margin_left"
+                android:layout_marginRight="@dimen/lyt_margin_right"
+                android:orientation="vertical">
+
+                <com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout
+
+                    android:id="@+id/mobileNumberTXT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fiveDp">
+
+                    <com.calibrage.payzanconsumer.framework.controls.CommonEditText
+                        android:id="@+id/mobileEdt"
+                        style="@style/EditTextStyle"
+                        android:layout_width="fill_parent"
+                        android:digits="0123456789"
+                        android:drawableRight="@drawable/prepaid_contacts_icon"
+                        android:hint="@string/mobile_number"
+                        android:imeOptions="actionNext"
+                        android:inputType="phone"
+                        android:maxLength="10"
+                        android:nextFocusDown="@+id/amount"
+                        android:nextFocusForward="@id/amount" />
+                </com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout>
+
+                <com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout
+                    android:id="@+id/amountTXT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fiveDp">
+
+                    <com.calibrage.payzanconsumer.framework.controls.CommonEditText
+                        android:id="@+id/amount"
+                        style="@style/EditTextStyle"
+                        android:layout_width="fill_parent"
+                        android:hint="@string/amount"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:nextFocusDown="@+id/commentEdt" />
+
+                </com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout>
+
+                <com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout
+                    android:id="@+id/commentTXT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fiveDp">
+
+                    <com.calibrage.payzanconsumer.framework.controls.CommonEditText
+                        android:id="@+id/commentEdt"
+                        style="@style/EditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="@dimen/main_layout_head_bottom_margin"
+                        android:hint="@string/comments"
+                        android:imeOptions="actionDone"
+                        android:singleLine="true"
+                        android:maxLength="100" />
+
+                </com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout>
+
+                <com.calibrage.payzanconsumer.framework.controls.CommonButton
+                    android:id="@+id/submit"
+                    style="@style/ButtonStyle"
+                    android:layout_marginTop="@dimen/btn_margin_top"
+                    android:background="@drawable/roundbutton"
+                    android:text="@string/send_money" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

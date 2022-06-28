@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_bank"
+            android:id="@+id/se_bank"
+            android:layout_margin="@dimen/eightDp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recylerviewPopular"
+            android:layout_below="@+id/se_bank">
+        </android.support.v7.widget.RecyclerView>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bankSpn"
+            android:layout_margin="@dimen/eightDp"
+            android:background="@drawable/border_accent"
+            android:layout_below="@+id/recylerviewPopular">
+        </Spinner>
+
+        <com.calibrage.payzanconsumer.framework.controls.CommonButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ButtonStyle"
+            android:id="@+id/payBtn"
+            android:text="@string/pay_now"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/bankSpn"/>
+    </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

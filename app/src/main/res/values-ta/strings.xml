@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Payzan App</string>
+
+    <string name="facebook_app_id">267297907115951</string>
+
+    <string name="fb_login_protocol_scheme">fb267297907115951</string>
+
+    <string name="com_facebook_loginview_log_in_button">Connect</string>
+
+    <string name="com_facebook_loginview_log_out_button">Your Logout</string>
+
+    <string name="terms_and_conditions">உள்நுழைவதன் மூலம், நீங்கள் எங்கள் காலத்தை  &amp; நிபந்தனைகள் மற்றும் தனியுரிமை கொள்கை</string>
+    <string name="terms_and_conditions_signup">உள்நுழைவதன் மூலம், நீங்கள் எங்கள் காலத்தை \ \'கள் &amp; நிபந்தனைகள் மற்றும் தனியுரிமை கொள்கை.</string>
+    <string name="canotlogin"> உள்நுழைய முடியவில்லையா?</string>
+
+    <string name="mobile_recharge_sname">"மொபைல் ரீசார்ஜ் &amp; பணம் செலுத்து"</string>
+
+    <string name="dth_sname">"டிடிஎச் ரீசார்ஜ்"</string>
+
+    <string name="water_sname">"தண்ணீர் பயன்பாட்டு ரசீது"</string>
+
+    <string name="landline_sname">"லேண்ட்லைன் ரீசார்ஜ்"</string>
+
+    <string name="cabletv_sname">"கம்பிவட தொலைக்காட்சி"</string>
+    <string name="err_please_enter_title">தலைப்பைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="datacard_sname">"டேட்டாகார்டைக் ரீசார்ஜ்"</string>
+
+    <string name="electricity_sname">"மின் ரசீது"</string>
+
+    <string name="broadband_sname">" பேண்ட்"</string>
+
+    <string name="wallet_sname">" என் பணப்பை"</string>
+
+    <string name="login_sname">"உள் நுழை"</string>
+
+    <string name="offer_sname">"சலுகைகள்"</string>
+
+    <string name="add_money_to_wallet">பணப்பைக்கு பணத்தை சேர்க்கவும்</string>
+
+    <string name="enter_amount_to_be_added_in_the_wallet">பணப்பையில் சேர்க்க வேண்டிய தொகையை உள்ளிடவும்</string>
+
+    <string name="enter_promo_code">விளம்பர குறியீட்டை உள்ளிடவும்(விருப்ப)</string>
+
+    <string name="add_money">பணம் சேர்க்கவும்</string>
+
+    <string name="subscriber_id">சந்தாதாரர் ஐடி</string>
+
+    <string name="select_operator">ஆபரேஷனைத் தேர்ந்தெடுக்கவும்</string>
+
+    <string name="amount">அளவு</string>
+
+    <string name="signin_with_facebook">பேஸ்பு கொண்டு உள்நுழையவும்</string>
+
+    <string name="password">கடவுச்சொல்</string>
+
+    <string name="mobile">மொபைல் </string>
+
+    <string name="login">உள் நுழை</string>
+
+    <string name="don_t_have_account_signup">கணக்கு இல்லை ..? கையெழுத்து</string>
+
+    <string name="signin_with_google">Google உடன் உள்நுழை</string>
+
+    <string name="signin_with_google_test">Google உடன் உள்நுழை</string>
+
+    <string name="mobile_number">மொபைல் எண்</string>
+
+    <string name="current_operator">நடப்பு ஆபரேட்டர்</string>
+
+    <string name="talktime_topup">டாக் டைம் டாப்அப்</string>
+
+    <string name="special_recharge">சிறப்பு ரீசார்ஜ்</string>
+
+    <string name="proceed_to_recharge">ரீசார்ஜ் செய்ய தொடரவும்</string>
+
+    <string name="select_district">மாவட்டத்தைத் தேர்ந்தெடுக்கவும்</string>
+
+    <string name="service_no">சேவை இல்லை</string>
+
+    <string name="consumer_no">நுகர்வோர் இல்லை</string>
+
+    <string name="proceed_to_pay_bill">பில் செலுத்தவும் தொடரவும்</string>
+
+    <string name="landline">லேண்ட்லைன்</string>
+
+    <string name="operator">ஆபரேட்டர்</string>
+
+    <string name="number_with_std_code">எஸ்டிடி கோட் கொண்ட எண்</string>
+
+    <string name="select_circle">வட்டத்தைத் தேர்ந்தெடுக்கவும்</string>
+
+    <string name="browse_plans">திட்டமிடல் திட்டங்கள்</string>
+
+    <string name="recharge">மீள்நிரப்பு</string>
+
+    <string name="profile">சுயவிவர</string>
+
+    <string name="female">பெண்</string>
+
+    <string name="male">ஆண்</string>
+
+    <string name="gender">பாலினம்</string>
+
+    <string name="mobile_number_signup">மொபைல் எண்</string>
+
+    <string name="email_mandatory">மின்னஞ்சல் </string>
+
+    <string name="create_password">கடவுச்சொல்லை உருவாக்கு</string>
+
+    <string name="sign_up">பதிவுசெய்தல்</string>
+
+    <string name="or">- அல்லது -</string>
+
+    <string name="order_no">Order No 1234567</string>
+
+    <string name="date_order">15 sep 2017 08:15 PM</string>
+
+    <string name="comments">கருத்து (விரும்பினால்)</string>
+
+    <string name="send_money">பணம் அனுப்பு</string>
+
+    <string name="select_board">வாரியம் தேர்ந்தெடுக்கவும்</string>
+
+    <string name="already_have_account">ஏற்கனவே கணக்கு இருக்கிறதா? உள் நுழை</string>
+
+    <string name="about_us">"எங்களை பற்றி"</string>
+
+    <string name="addcard">"புதிய அட்டை சேர்க்கவும்"</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+    <string name="hello_blank_fragment">வெற்று வெற்று துண்டு</string>
+
+    <string name="data_card_number">தரவு அட்டை எண்</string>
+
+    <string name="confirm_password">கடவுச்சொல்லை உறுதிப்படுத்துக</string>
+
+    <string name="Update_Password">கடவுச்சொல் புதுப்பிக்கவும்</string>
+
+    <string name="search_transactionid">தேடல் பரிவர்த்தனை ஐடி, மொபைல் இல்லை ...</string>
+
+    <string name="AgentTransaction">பரிவர்த்தனை</string>
+
+    <string name="AgentCommision">ஆணைக்குழு</string>
+
+    <string name="enter_card_details">அட்டை விவரங்களை உள்ளிடவும்</string>
+
+    <string name="card_number">அட்டை எண்</string>
+
+    <string name="expirydate">காலாவதியாகும் திகதி</string>
+
+    <string name="card_holder_name">கார்ட் ஹோல்டர் பெயர்</string>
+
+    <string name="card_label">அட்டை லேபிள் (விரும்பினால்)</string>
+
+    <string name="savethis_card">மேலும் பரிவர்த்தனைக்கு இந்த கார்டை சேமிக்கவும்</string>
+
+    <string name="save_card">அட்டை சேமி</string>
+
+    <string name="month">மாதம்</string>
+
+    <string name="year">ஆண்டு</string>
+
+    <string name="currentpassword">தற்போதைய கடவுச்சொல்</string>
+
+    <string name="newpassword">புதிய கடவுச்சொல்</string>
+
+    <string name="retypepassword">புதிய கடவுச்சொல் மீண்டும் தட்டச்சு</string>
+
+    <string name="change_password">கடவுச்சொல்லை மாற்று</string>
+
+    <string name="order_history">ஆர்டர் வரலாறு</string>
+
+    <string name="terms_of_services">சேவை விதிமுறைகள்</string>
+
+    <string name="saved_cards">சேமித்த அட்டைகள்</string>
+    <string name="support">ஆதரவு</string>
+    <string name="choose_language">உங்கள் மொழியைத் தேர்வு செய்க</string>
+
+    <string name="accountno">4166xxxxxxxxxxx000000|வங்கி பெயர்</string>
+
+    <string name="savecardslock">128 பிட் குறியாக்கத்தின் மூலம் உங்கள் விவரங்கள் பாதுகாக்கப்படுகின்றன xxxx</string>
+
+    <string name="note">Note:Once the password change is successful,you will need to Re-Login</string>
+
+    <string name="province_name">மாகாணம் </string>
+    <string name="mandal_name">மண்டல்</string>
+    <string name="village_name">கிராமம்</string>
+    <string name="district_name">மாவட்டம்</string>
+    <string name="title_type">தலைப்பு</string>
+    -
+    <string-array name="month_arrays">
+
+        <item>மாதம்</item>
+
+        <item>ஜனவரி</item>
+
+        <item>பிப்ரவரி</item>
+
+        <item>மார்ச்</item>
+
+        <item>ஏப்ரல்</item>
+
+        <item>மே</item>
+
+        <item>ஜூன்</item>
+
+        <item>ஜூலை</item>
+
+        <item>ஆகஸ்ட்</item>
+
+        <item>செப்டம்பர்</item>
+
+        <item>அக்டோபர்</item>
+
+        <item>நவம்பர்</item>
+
+        <item>December</item>
+
+    </string-array>
+
+    <string name="scan_barcode_button">பார்கோடு ஸ்கேன்</string>
+
+    <string name="no_barcode_captured">இல்லை பார்கோடு இல்லை</string>
+
+    <string name="barcode_error_format">"பார்கோடு வாசிப்பதில் பிழை: %1$s"</string>
+
+    <!-- Strings related to barcode scanner -->
+
+
+    <string name="ok">சரி</string>
+
+    <string name="permission_camera_rationale">கேமராவுக்கு அணுகல் தேவைப்படுகிறது</string>
+
+    <string name="no_camera_permission">கேமரா அனுமதி இல்லாததால் இந்த பயன்பாட்டை இயக்க முடியாது. பயன்பாடு இப்போது வெளியேறும்.</string>
+
+    <string name="low_storage_error">குறைவான சாதன சேமிப்பகத்தின் காரணமாக ஃபேஸ் டெக்டர் சார்புகளை பதிவிறக்கம் செய்ய முடியாது</string>
+
+
+    -
+    <string-array name="year_arrays">
+
+        <item>ஆண்டு</item>
+
+        <item>2016</item>
+
+        <item>2017</item>
+
+        <item>2018</item>
+
+        <item>2019</item>
+
+        <item>2020</item>
+
+    </string-array>
+
+
+    -
+    <string-array name="days_of_week">
+
+        <item>திங்கட்கிழமை</item>
+
+        <item>செவ்வாய்</item>
+
+        <item>புதன்கிழமை</item>
+
+        <item>வியாழக்கிழமை</item>
+
+        <item>வெள்ளி</item>
+
+    </string-array>
+
+    <string name="payzan_wallet">பாசான் வாலட்</string>
+
+    <string name="recharge_and_bill_payments">ரீசார்ஜ் மற்றும் பே பில்கள்</string>
+
+    <string name="wallet_balance">பணப்பை சமநிலை: </string>
+
+    <string name="paysemd">செலுத்த / அனுப்பவும்</string>
+
+    <string name="add_withdraw">சேர் / பின்வாங்கும்</string>
+
+    <string name="MyTransactions">என் பரிவர்த்தனைகள்</string>
+
+    <string name="home">முகப்பு</string>
+
+    <string name="wallet">கைப்பை</string>
+
+    <string name="offers">சலுகைகள்</string>
+
+    <string name="lang">select language</string>
+
+    <string name="first_name">முதல் பெயர்</string>
+    <string name="middle_name">மத்திய பெயர்</string>
+    <string name="last_name">கடைசி பெயர்</string>
+    <string name="mobile_no">அலைபேசி எண்.</string>
+    <string name="email">மின்னஞ்சல்</string>
+    <string name="select_province">மாகாணத்தில் தேர்ந்தெடுக்கப்பட்ட</string>
+    <string name="select_mandal">மண்டலை தேர்ந்தெடுக்கவும்</string>
+    <string name="select_village">கிராமத்தைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="please_select_village">தயவு செய்து கிராமத்தைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="address1">முகவரி1</string>
+    <string name="address2">முகவரி2</string>
+    <string name="landmark">மைல்கல்</string>
+    <string name="enter_your_comments">உங்கள் கருத்துகளை உள்ளிடவும்</string>
+    <string name="submit">சமர்ப்பி</string>
+    <string name="partner_with_payzan">பேஸனுடனான கூட்டாளர்</string>
+    <string name="received">பெறப்பட்டது</string>
+    <string name="all">அனைத்து</string>
+    <string name="paid">பணம்</string>
+    <string name="added">சேர்க்கப்பட்டது</string>
+    <string name="my_transaction">என் பரிவர்த்தனை</string>
+    <string name="send_money_to_wallet">பணப்பையை பணம் அனுப்பு</string>
+    <string name="add_moneys">+ பணம் சேர்க்கவும்</string>
+    <string name="prepaid">ப்ரீபெய்டு</string>
+    <string name="postpaid">போஸ்ட் பெய்டு</string>
+    <string name="save">சேமி</string>
+    <string name="user_name">பயனர் பெயர்</string>
+    <string name="date_of_birth">பிறந்த தேதி</string>
+    <string name="update_operator">ஆபரேட்டர் புதுப்பிக்கவும்</string>
+    <string name="account_number">கணக்கு எண் </string>
+
+    <string name="confirm_password_msg">கடவுச்சொல் உருவாக்கத்துடன் பொருத்த வேண்டும்</string>
+    <string name="err_enter_mobile_number">மொபைல் எண் உள்ளிடவும்</string>
+    <string name="err_enter_valid_mobile_no">சரியான மொபைல் எண் உள்ளிடவும்</string>
+    <string name="err_select_operator">ஆபரேஷனைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="err_enter_amount">அளவு உள்ளிடவும்</string>
+    <string name="err_please_select_operator">ஆபரேட்டர் தேர்ந்தெடுக்கவும்</string>
+    <string name="err_enter_number">எண் உள்ளிடவும்</string>
+    <string name="err_select_circle">வட்டத்தைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="err_enter_subscriber_id">சந்தாதாரர் ஐடியை உள்ளிடவும்</string>
+    <string name="err_please_enter_service_no">சேவையினோவை உள்ளிடுக</string>
+    <string name="err_please_enter_amount">தொகையை உள்ளிடவும்</string>
+    <string name="err_enter_account_no">கணக்கை உள்ளிடவும்</string>
+    <string name="err_select_district">மாவட்டத்தைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="err_enter_service_no">சேவை இல்லை உள்ளிடவும்</string>
+    <string name="err_select_board">தேர்ந்தெடு குழு</string>
+    <string name="err_enter_consumer_no">நுகர்வோர் இல்லை</string>
+    <string name="err_enter_data_card_no">தரவு அட்டை இல்லை உள்ளிடவும்.</string>
+    <string name="err_enter_mobile_no">மொபைல் எண் உள்ளிடவும்</string>
+    <string name="err_enter_first_name">முதல் பெயரை உள்ளிடவும்</string>
+    <string name="err_enter_last_name">கடைசி பெயரை உள்ளிடவும்</string>
+    <string name="err_enter_email_id">மின்னஞ்சல் ஐடியை உள்ளிடவும்</string>
+    <string name="err_enter_valid_email">சரியான மின்னஞ்சல் உள்ளிடவும்</string>
+    <string name="err_enter_state_name">மாநிலத்தின் பெயரை உள்ளிடவும்</string>
+    <string name="err_enter_district_name">மாவட்டத்தின் பெயரை உள்ளிடவும்</string>
+    <string name="err_enter_mandal_name">மண்டல் பெயரை உள்ளிடவும்</string>
+    <string name="err_enter_village_name">கிராமத்தின் பெயரை உள்ளிடவும்</string>
+    <string name="err_enter_address1">முகவரியை உள்ளிடவும்1</string>
+    <string name="err_enter_address2">முகவரியை உள்ளிடவும்2</string>
+    <string name="err_enter_landmark">மைல்கல் உள்ளிடவும்</string>
+    <string name="err_enter_comments">கருத்துகளை உள்ளிடவும்</string>
+    <string name="err_enter_password">கடவுச்சொல்லை உள்ளிடுக</string>
+    <string name="err_password_length_invalid">கடவுச்சொல் நீளம் தவறானது</string>
+    <string name="err_please_enter_mobile_no">மொபைல் எண் உள்ளிடவும்.</string>
+    <string name="err_enter_valid_email_id">சரியான மின்னஞ்சல் ஐடியை உள்ளிடவும்</string>
+    <string name="err_enter_confirm_password">உறுதிப்படுத்து கடவுச்சொல்லை உள்ளிடுக</string>
+    <string name="err_please_enter_character"><![CDATA[Please enter min 4 && max 20 character,1 uppercase character,1 number,1 special character]]></string>
+    <string name="err_please_enter_current_password">தற்போதைய கடவுச்சொல்லை உள்ளிடுக</string>
+    <string name="err_enter_new_password">புதிய கடவுச்சொல்லை உள்ளிடவும்</string>
+    <string name="please_enter_new_valid_password">புதிய சரியான கடவுச்சொல்லை உள்ளிடுக</string>
+    <string name="err_enter_retype_password">புதிய கடவுச்சொல்லை மீண்டும் தட்டச்சு செய்க</string>
+    <string name="err_enter_valid_firstname">செல்லுபடியாகும் firstname ஐ உள்ளிடவும்</string>
+    <string name="err_enter_valid_lastname">செல்லுபடியாகும் கடைசி பெயரை உள்ளிடவும்</string>
+    <string name="err_enter_username">பயனர் பெயரை உள்ளிடவும்</string>
+    <string name="err_enter_dob">பிறந்த தேதியை உள்ளிடவும்</string>
+    <string name="add_new_card">புதிய கார்டைச் சேர்க்கவும்</string>
+    <string name="err_enter_card_number">அட்டை எண் உள்ளிடவும்</string>
+    <string name="err_enter_cardholder_name">அட்டை ஹோல்டர் பெயரை உள்ளிடவும்</string>
+    <string name="err_enter_month">மாதம் உள்ளிடவும்</string>
+    <string name="err_enter_year">ஆண்டு சேர்க்கவும்</string>
+    <string name="toast_fail">தோல்வியடையும்</string>
+    <string name="toast_check">சரிபார்க்கவும்</string>
+    <string name="toast_amount_is_not_valid">தொகை தவறானது</string>
+    <string name="toast_iscalling">அழைக்கிறது</string>
+    <string name="toast_sucess">sucess</string>
+    <string name="toast_signout">வெளியேறு</string>
+    <string name="toast_allowed_special">சிறப்பு எழுத்துகள் அனுமதிக்கப்படவில்லை</string>
+    <string name="toast_camera">கேமரா அனுமதி வழங்கப்பட்டது</string>
+    <string name="toast_camera_denied">கேமரா அனுமதி மறுக்கப்பட்டது</string>
+    <string name="toast_please_login">தயவு செய்து புகுபதிகை செய்யவும்</string>
+    <string name="toast_user_already_signup">பயனர் ஏற்கனவே விவரங்களை பதிவு</string>
+    <string name="toast_clicked">clicked</string>
+    <string name="toast_obback">OB BACK</string>
+    <string name="toast_message">செய்தி:</string>
+    <string name="toast_token">டோக்கன் :</string>
+    <string name="pay_now">இப்போது செலுத்த</string>
+    <string name="save_this_card_for_further_transaction">மேலும் பரிவர்த்தனைக்கு இந்த அட்டை சேமிக்கவும்</string>
+    <string name="card_label_optional">அட்டை லேபிள் (விரும்பினால்)</string>
+    <string name="card_holder_s_name">கார்ட் ஹோல்டர் \'கள் பெயர்</string>
+
+    <string name="cancel">ரத்து</string>
+    <string name="please_login">தயவு செய்து உள்நுழைக?</string>
+    <string name="payzan_app">பாசான் பயன்பாடு</string>
+    <string name="do_you_want_to_exit_from_the_app">பயன்பாட்டிலிருந்து வெளியேற விரும்புகிறீர்களா?</string>
+    <string name="change_photo">புகைப்படத்தை மாற்று</string>
+    <string name="scanqr">ScanQR</string>
+    <string name="share">பகிர்</string>
+    <string name="sign_out">வெளியேறு</string>
+    <string name="select_bank">வங்கி தேர்ந்தெடு</string>
+    <string name="paynow">இப்போது செலுத்த</string>
+    <string name="request_for_agent">முகவர் வேண்டுகோள்</string>
+
+    <string name="err_enter_title"> தலைப்பு தேர்ந்தெடு</string>
+    <string name="select_title">--தலைப்பு தேர்ந்தெடு--</string>
+    <string name="err_enter_middle_name">நடுத்தர பெயரை உள்ளிடவும்</string>
+    <string name="err_enter_valid_middle">சரியான நடுத்தர பெயரை உள்ளிடவும்</string>
+
+    <string name="edit_btn">தொகு</string>
+    <string name="delete_btn">அழி</string>
+
+    <string name="name_adp">பெயர்: </string>
+    <string name="address1_adp">முகவரி 1: </string>
+    <string name="address2_adp">முகவரி 2: </string>
+    <string name="pincode_adp">அஞ்சல் குறியீடு: </string>
+
+    <string name="names">பெயர்</string>
+    <string name="err_enter_name">தயவுசெய்து பெயரை உள்ளிடவும்</string>
+    <string name="err_enter_valid_name">சரியான பெயரை உள்ளிடவும்</string>
+    <string name="err_enter_pincode">முள் கோட் உள்ளிடவும்</string>
+    <string name="err_enter_valid_pincode">செல்லுபடியாகும் முள் குறியை உள்ளிடவும்</string>
+    <string name="err_enter_valid_landmark">சரியான மைல்கல் உள்ளிடவும்</string>
+    <string name="err_enter_valid_address1">சரியான முகவரி 1 ஐ உள்ளிடுக</string>
+    <string name="err_enter_valid_address2">சரியான முகவரி 2 ஐ உள்ளிடுக</string>
+    <string name="addressline1">முகவரி வரி 1</string>
+    <string name="no_records_found">எந்த பதிவுகளும் கண்டறியப்படவில்லை</string>
+    <string name="addressline2">முகவரி வரி 2</string>
+    <string name="pin_codes">அஞ்சல் குறியீடு</string>
+    <string name="add_new_address_activity">புதிய முகவரி செயல்பாட்டைச் சேர்க்கவும்</string>
+    <string name="add_address">முகவரி சேர்க்கவும்</string>
+    <string name="add_new_address">புதிய முகவரி சேர்க்கவும்</string>
+
+    <string name="select_gender">தயவுசெய்து பாலினத்தைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="update_address">முகவரி புதுப்பிக்கவும்</string>
+    <string name="edit_address">முகவரி திருத்த</string>
+    <string name="personal_details">சொந்த விவரங்கள்</string>
+    <string name="title">தலைப்பு</string>
+    <string name="post_code">அஞ்சல் குறியீடு</string>
+    <string name="err_amt_max_limit">தயவு செய்து 5000 க்கும் குறைவாக உள்ளிடவும்</string>
+    <string name="err_psw_mismatch">புதிய கடவுச்சொல்லுடன் பொருந்த வேண்டும்</string>
+
+    <string name="no_internet_old">இணைய இணைப்பு இல்லை</string>
+    <string name="no_internet">உங்கள் இணைய இணைப்பு சரிபார்க்கவும்</string>
+
+    <string name="credit_card">கடன் அட்டை</string>
+    <string name="debit_card">பற்று அட்டை</string>
+    <string name="net_banking">நிகர வங்கி</string>
+    <string name="enter_cvv">CVV ஐ உள்ளிடுக</string>
+    <string name="cvv">சிவிவி</string>
+    <string name="err_enter_valid_card_number">செல்லுபடியாகும் அட்டை எண்ணை உள்ளிடுக</string>
+    <string name="err_enter_valid_cvv">Please enter valid CVV</string>
+
+    <string name="example_password">"உதாரணமாக : abcABC@123"</string>
+    <string name="please_select_province">தயவுசெய்து மாகாணத்தைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="please_select_mandal">மண்டலை தேர்ந்தெடுக்கவும்</string>
+    <string name="please_select_district">மாவட்டத்தைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="err_enter_valid_month">செல்லுபடியாகும் மாதம் உள்ளிடவும்</string>
+    <string name="spn_select_circle">--வட்டத்தைத் தேர்ந்தெடுக்கவும்--</string>
+    <string name="spn_select_operator">--ஆபரேஷனைத் தேர்ந்தெடுக்கவும்--</string>
+    <string name="err_please_select_district">மாவட்டத்தைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="spn_select_district">--மாவட்டத்தைத் தேர்ந்தெடுக்கவும்--</string>
+    <string name="err_please_select_board">வாரியம் தேர்ந்தெடுக்கவும்</string>
+    <string name="spn_select_board">--வாரியம் தேர்ந்தெடுக்கவும்--</string>
+    <string name="err_please_select_circle">வட்டத்தைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="err_please_enter_valid_name">குறைந்தபட்சம் குறைந்தபட்சம் 3 எழுத்துகள் உள்ளிடுக</string>
+    <string name="err_own_account_number">உங்கள் சொந்த கணக்கிற்கு பணம் மாற்ற முடியாது</string>
+    <string name="select_an_option_to_pay">செலுத்த ஒரு விருப்பத்தை தேர்ந்தெடுக்கவும்</string>
+</resources>

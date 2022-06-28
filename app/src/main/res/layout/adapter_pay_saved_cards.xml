@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <RadioButton
+                android:id="@+id/checkRB"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="0.5"
+                tools:ignore="VectorDrawableCompat" />
+
+            <ImageView
+                android:id="@+id/cardImg"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:src="@drawable/visa" />
+
+            <com.calibrage.payzanconsumer.framework.controls.CommonTextView
+                android:id="@+id/cardNameTxt"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/txt_height"
+                android:layout_weight="4"
+                android:text="@string/accountno"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_FontSize" />
+
+
+            <ImageView
+                android:id="@+id/deleteImg"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="0.5"
+                app:srcCompat="@drawable/ic_rubbish_bin" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/payLyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+            <com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout
+                android:id="@+id/cvvTIL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="@dimen/fourtyDp"
+                android:focusable="false"
+                app:hintTextAppearance="@style/TextLabel">
+
+                <com.calibrage.payzanconsumer.framework.controls.CommonEditText
+                    android:id="@+id/cvvEdt"
+                    style="@style/EditTextStyle_modify"
+                    android:layout_width="@dimen/hunderedDp"
+                    android:hint="@string/cvv"
+                    android:imeOptions="actionNone"
+                    android:inputType="numberPassword"
+                    android:maxLength="3"
+
+                    />
+            </com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout>
+
+
+            <com.calibrage.payzanconsumer.framework.controls.CommonButton
+                android:id="@+id/payBtn"
+                style="@style/ButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/paynow" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/gray" />
+
+
+    </LinearLayout>
+</RelativeLayout>

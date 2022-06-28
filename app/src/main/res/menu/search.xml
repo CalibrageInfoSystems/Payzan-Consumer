@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+  <item android:id="@+id/action_search"
+    android:icon="@drawable/ic_search"
+    android:title="Search"
+    app:showAsAction="always|collapseActionView"
+      android:visible="false"
+     />
+    <item
+        android:id="@+id/action_cart"
+        android:title="notification"
+        android:icon="@drawable/actionbar_space_between_icon"
+        app:showAsAction="always"
+        app:actionLayout="@layout/custom_action_item_layout"
+        />
+    </menu>

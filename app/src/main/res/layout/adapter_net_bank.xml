@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="80dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/checkRB"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/eighty"
+            android:src="@drawable/ban"
+            android:scaleType="centerInside"
+            android:id="@+id/cardImg"/>
+    </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_new"
+        android:clickable="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                android:id="@+id/layheader"
+                layout="@layout/main_header" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layheader"
+                android:layout_marginLeft="@dimen/lyt_margin_left"
+                android:layout_marginRight="@dimen/lyt_margin_right"
+                android:layout_marginTop="@dimen/lyt_margin_top"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/lyt_margin_bottom"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/img_height"
+                        android:layout_height="@dimen/img_width"
+                        app:srcCompat="@drawable/ic_water_tap" />
+
+                    <com.calibrage.payzanconsumer.framework.controls.CommonTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/txt_margin"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:gravity="center"
+                        android:text="@string/water_sname"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_header" />
+                </LinearLayout>
+
+                <com.calibrage.payzanconsumer.framework.controls.CommonTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/txt_height"
+                    android:gravity="bottom"
+                    android:paddingLeft="@dimen/fiveDp"
+                    android:text="@string/select_board"
+                    android:textColor="@color/accent"
+                    android:textSize="@dimen/edt_hint_FontSize" />
+
+                <com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout
+                    android:id="@+id/boardTXT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Spinner
+                        android:id="@+id/boardSpn"
+                        style="@style/EditTextStyle"
+                        android:layout_width="match_parent"
+                        android:hint="@string/select_board"
+                        android:imeOptions="actionNext"
+                        android:paddingLeft="@dimen/edt_text_pading_left" />
+                </com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout>
+
+                <com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout
+                    android:id="@+id/consNoTXT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@style/TextLabel"
+                    android:layout_marginTop="7dp">
+
+                    <com.calibrage.payzanconsumer.framework.controls.CommonEditText
+                        android:id="@+id/consumerNEdt"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/edt_height"
+                        android:background="@drawable/roundededittext"
+                        android:gravity="center_vertical"
+                        android:maxLength="20"
+                        android:hint="@string/account_number"
+                        android:paddingLeft="@dimen/btn_register_margin"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal" />
+                </com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout>
+
+                <com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout
+                    android:id="@+id/amountTXT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@style/TextLabel"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="@dimen/btn_margin_bottom">
+
+                    <com.calibrage.payzanconsumer.framework.controls.CommonEditText
+                        android:id="@+id/amountEdt"
+                        style="@style/EditTextStyle_modify"
+                        android:layout_width="match_parent"
+                        android:hint="@string/amount"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLength="6" />
+                </com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout>
+
+                <com.calibrage.payzanconsumer.framework.controls.CommonButton
+                    android:id="@+id/submit"
+                    style="@style/ButtonStyle"
+                    android:imeOptions="actionSend"
+                    android:text="@string/proceed_to_pay_bill" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

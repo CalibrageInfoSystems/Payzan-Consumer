@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">पेज़न ऐप</string>
+    <string name="facebook_app_id">267297907115951</string>
+    <string name="fb_login_protocol_scheme">fb267297907115951</string>
+    <string name="com_facebook_loginview_log_in_button">जुडिये</string>
+    <string name="com_facebook_loginview_log_out_button">आपका लॉगआउट</string>
+    <string name="terms_and_conditions">By loging in,you accept our Term\'s  &amp; Conditions and Privacy Policy</string>
+
+
+    <string name="canotlogin"> लॉग इन नहीं कर सकता..?</string>
+    <string name="mobile_recharge_sname">"मोबाइल रिचार्ज &amp; पैसा भरो"</string>
+    <string name="dth_sname">"डीटीएच"</string>
+    <string name="water_sname">"पानी"</string>
+    <string name="landline_sname">"लैंडलाइन"</string>
+    <string name="cabletv_sname">"केबल टीवी"</string>
+    <string name="datacard_sname">"डेटा कार्ड"</string>
+    <string name="electricity_sname">"बिजली"</string>
+    <string name="broadband_sname">"ब्रॉडबैंड"</string>
+    <string name="wallet_sname">"मेरा बटुआ"</string>
+    <string name="login_sname">"लॉग इन करें"</string>
+    <string name="offer_sname">"्रस्तावों"</string>
+    <string name="add_money_to_wallet">वॉलेट में पैसे जोड़ें</string>
+    <string name="enter_amount_to_be_added_in_the_wallet">वॉलेट में जोड़ा जाने वाला राशि दर्ज करें</string>
+    <string name="enter_promo_code">प्रचार कि नियमावली दर्ज करो</string>
+    <string name="add_money">पैसे जोड़ें</string>
+    <string name="subscriber_id">सब्सक्राइबर आईडी</string>
+    <string name="select_operator">ऑपरेटर चुनें</string>
+    <string name="amount">रकम</string>
+    <string name="signin_with_facebook">फ़ेसबुक से साइन इन करें</string>
+    <string name="password">पारण शब्द</string>
+    <string name="mobile">मोबाइल </string>
+    <string name="login">लॉग इन करें</string>
+    <string name="don_t_have_account_signup">Don\'t have account..?Signup</string>
+    <string name="signin_with_google">Google के साथ साइनइन करें</string>
+    <string name="signin_with_google_test">Google के साथ साइनइन करें</string>
+    <string name="mobile_number">मोबाइल नंबर</string>
+    <string name="current_operator">वर्तमान ऑपरेटर</string>
+    <string name="talktime_topup">टॉकटाइम टॉपअप</string>
+    <string name="special_recharge">विशेष रिचार्ज</string>
+    <string name="proceed_to_recharge">रिचार्ज के लिए आगे बढ़ें</string>
+    <string name="select_district">जिला चुनें</string>
+    <string name="service_no">सेवा संख्या</string>
+    <string name="consumer_no">उपभोक्ता संख्या</string>
+    <string name="proceed_to_pay_bill">वेतन विधेयक के लिए आगे बढ़ें</string>
+    <string name="landline">लैंडलाइन</string>
+    <string name="operator">ऑपरेटर</string>
+    <string name="number_with_std_code">एसटीडी कोड के साथ संख्या</string>
+    <string name="select_circle">मंडल का चयन करें</string>
+    <string name="browse_plans">ब्राउज़ करें योजनाएं</string>
+    <string name="recharge">फिर से दाम लगाना</string>
+    <string name="profile">प्रोफाइल</string>
+    <string name="female">महिला</string>
+    <string name="male">पुरुष</string>
+    <string name="gender">लिंग</string>
+    <string name="mobile_number_signup">मोबाइल नंबर</string>
+    <string name="email_optional">ईमेल (अनिवार्य)</string>
+    <string name="create_password">पासवर्ड बनाएं</string>
+    <string name="sign_up">साइन अप करें
+</string>
+    <string name="or">- या -</string>
+    <string name="order_no">आदेश संख्या 1234567</string>
+    <string name="date_order">15 sep 2017 08:15 PM</string>
+    <string name="comments">टिप्पणी (वैकल्पिक)</string>
+    <string name="send_money">पैसे भेजो</string>
+    <string name="select_board">बोर्ड का चयन करें</string>
+    <string name="already_have_account">Already have account? Login</string>
+    <string name="about_us">"हमारे बारे में"</string>
+    <string name="addcard">"नया कार्ड जोड़ें"</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">नमस्ते रिक्त टुकड़ा</string>
+    <string name="data_card_number">डाटा कार्ड नंबर</string>
+    <string name="confirm_password">पासवर्ड की पुष्टि कीजिये</string>
+    <string name="Update_Password">पासवर्ड अपडेट करें</string>
+    <string name="search_transactionid">खोज लेनदेन आईडी, मोबाइल नंबर ...</string>
+    <string name="AgentTransaction">लेन-देन</string>
+    <string name="AgentCommision">आयोग</string>
+    <string name="enter_card_details">कार्ड विवरण दर्ज करें</string>
+    <string name="card_number">कार्ड नंबर</string>
+    <string name="expirydate">समाप्ति तिथि</string>
+    <string name="card_holder_name">कार्डधारक का नाम </string>
+    <string name="card_label">कार्ड लेबल (वैकल्पिक)</string>
+    <string name="savethis_card">आगे की लेनदेन के लिए यह कार्ड सहेजें</string>
+    <string name="savecard">कार्ड बचाएं</string>
+    <string name="month">महीना</string>
+    <string name="year">साल</string>
+    <string name="currentpassword">वर्तमान पासवर्ड</string>
+    <string name="newpassword">नया पासवर्ड</string>
+    <string name="retypepassword">नया पासवर्ड दोबारा टाइप करें</string>
+    <string name="changepassword">पासवर्ड बदलें</string>
+    <string name="orderhistory">आदेश इतिहास</string>
+    <string name="termsofservices">सेवा की शर्तें</string>
+    <string name="savecards">सहेजे गए कार्ड</string>
+    <string name="accountno">4166xxxxxxxxxxx000000|Bank Name</string>
+    <string name="savecardslock">आपके विवरण 128 बिट एन्क्रिप्शन द्वारा सुरक्षित हैं xxxx</string>
+    <string name="note">Note:पासवर्ड परिवर्तन सफल होने के बाद, आपको पुन: लॉगइन करना होगा</string>
+
+
+    <string-array name="month_arrays">
+        <item>महीना</item>
+        <item>जनवरी</item>
+        <item>फरवरी</item>
+        <item> मार्च  </item>
+        <item>अप्रैल</item>
+        <item>मई</item>
+        <item>जून </item>
+        <item>जुलाई</item>
+        <item> अगस्त</item>
+        <item>सितम्बर </item>
+        <item>अक्टूबर </item>
+        <item>नवम्बर </item>
+        <item>दिसम्बर</item>
+    </string-array>
+
+
+    <string name="scan_barcode_button">स्कैन बारकोड</string>
+    <string name="no_barcode_captured">कोई बारकोड पर कब्जा नहीं किया</string>
+    <string name="barcode_error_format">"बारकोड पढ़ने में त्रुटि: %1$s"</string>
+
+    <!-- Strings related to barcode scanner -->
+    <string name="ok">ठीक</string>
+    <string name="permission_camera_rationale">पता लगाने के लिए कैमरे की पहुंच आवश्यक है</string>
+    <string name="no_camera_permission">यह एप्लिकेशन नहीं चल सकता क्योंकि इसमें कैमरा अनुमति नहीं है एप्लिकेशन अब बाहर निकल जाएगा</string>
+    <string name="low_storage_error">कम डिवाइसेज़ स्टोरेज के कारण फेस डिटेक्टर निर्भरता को डाउनलोड नहीं किया जा सकता</string>
+
+    <string-array name="year_arrays">
+        <item>Year</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+
+    </string-array>
+
+    <string-array name="days_of_week">
+        <item>सोमवार</item>
+        <item>मंगलवार</item>
+        <item>बुधवार</item>
+        <item>गुरूवार</item>
+        <item>शुक्रवार</item>
+    </string-array>
+
+
+    <string name="payzan_wallet">पेज़न वॉलेट</string>
+    <string name="recharge_and_bill_payments">रिचार्ज और बिल भुगतान</string>
+    <string name="wallet_balance">बटुआ बैलेंस :</string>
+
+    <string name="paysemd">भुगतान / भेजें</string>
+    <string name="add_withdraw">जोड़ें / निकासी</string>
+
+    <string name="MyTransactions">मेरे लेनदेन</string>
+
+    <string name="home">होम</string>
+    <string name="wallet">बटुआ</string>
+    <string name="offers">ऑफर</string>
+
+
+    <string name="lang">select language</string>
+
+    <string name="contin">जारी रहना</string>
+    <string name="last_name">Last Name</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="save_this_card_for_further_transaction">Save this Card for further transaction</string>
+    <string name="card_label_optional">Card Label(Optional)</string>
+    <string name="card_holder_s_name">Card Holder\'s name</string>
+    <string name="select_bank">Select Bank</string>
+    <string name="paynow">PayNow</string>
+</resources>

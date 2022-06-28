@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_new"
+    android:clickable="true"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/lyt_margin_left"
+        android:layout_marginRight="@dimen/lyt_margin_right"
+        android:layout_marginTop="@dimen/lyt_margin_top"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/lyt_margin_bottom"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/img_height"
+                android:layout_height="@dimen/image_width"
+                app:srcCompat="@drawable/ic_addmoneytowallet" />
+
+            <com.calibrage.payzanconsumer.framework.controls.CommonTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/add_money_to_wallet"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_header" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/lyt_margin_bottom"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/addHundTxt"
+                    style="@style/AddMoneyTxt"
+                    android:layout_width="match_parent"
+                    android:layout_margin="@dimen/fourDp"
+                    android:text="100 +" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/addfiveTxt"
+                    style="@style/AddMoneyTxt"
+                    android:layout_width="match_parent"
+                    android:layout_margin="@dimen/fourDp"
+                    android:text="500 +" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/addthouTxt"
+                    style="@style/AddMoneyTxt"
+                    android:layout_width="match_parent"
+                    android:layout_margin="@dimen/fourDp"
+                    android:text="1000 +" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout
+            android:id="@+id/addmoneytxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.calibrage.payzanconsumer.framework.controls.CommonEditText
+                android:id="@+id/amount"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:hint="@string/enter_amount_to_be_added_in_the_wallet"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:nextFocusForward="@id/promocode"
+                android:nextFocusDown="@id/promocode" />
+        </com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout>
+
+        <com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fiveDp">
+
+            <com.calibrage.payzanconsumer.framework.controls.CommonEditText
+                android:id="@+id/promocode"
+                style="@style/EditTextStyle"
+                android:layout_marginBottom="@dimen/main_layout_head_bottom_margin"
+                android:hint="@string/enter_promo_code"
+                android:imeOptions="actionDone"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 "
+                android:inputType="text"
+                android:maxLength="100" />
+        </com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout>
+
+        <com.calibrage.payzanconsumer.framework.controls.CommonButton
+            android:id="@+id/submit"
+            style="@style/ButtonStyle"
+            android:text="@string/add_money"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</ScrollView>

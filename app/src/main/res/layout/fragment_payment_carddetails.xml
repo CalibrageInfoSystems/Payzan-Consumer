@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/layout_margin_top">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_card_details" />
+
+
+            <com.devmarvel.creditcardentry.library.CreditCardForm
+                android:id="@+id/credit_card_form"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:visibility="gone"
+                app:helper_text_color="@color/black"
+                app:include_helper="true"
+                app:include_zip="true"
+                app:input_background="@drawable/border_edit_text" />
+
+            <com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout
+                android:id="@+id/Card_no_TIL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fiveDp"
+                android:visibility="visible">
+
+                <!--<com.calibrage.payzanconsumer.framework.controls.CommonEditText-->
+                <!--style="@style/EditTextStyle"-->
+                <!--android:id="@+id/cardNoEdt"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:hint="@string/card_number"-->
+                <!--android:layout_marginBottom="@dimen/edt_bottom_margin"-->
+                <!--android:inputType="phone"-->
+                <!--android:maxLength="19"-->
+                <!--android:layout_height="wrap_content" />-->
+
+                <com.calibrage.payzanconsumer.framework.controls.CreditCardEditText
+                    android:id="@+id/credit_test"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="0123456789"
+                    android:hint="@string/card_number"
+                    android:maxLines="1"
+                    android:imeOptions="actionNext"
+                    android:nextFocusForward="@id/monthSp"
+                    android:inputType="phone"
+                    android:maxLength="19" />
+
+            </com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fiveDp"
+                android:text="@string/expirydate" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fiveDp"
+                android:weightSum="2">
+
+                <Spinner
+                    android:id="@+id/monthSp"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edittext_height"
+                    android:layout_marginLeft="@dimen/thirtyDp"
+                    android:layout_marginRight="@dimen/thirtyDp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_edit_text"
+                    android:hint="@string/month"
+                    android:imeOptions="actionNext"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/light_gray" />
+
+
+                <Spinner
+                    android:id="@+id/yearSp"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edittext_height"
+                    android:layout_marginLeft="@dimen/thirtyDp"
+                    android:layout_marginRight="@dimen/thirtyDp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_edit_text"
+                    android:hint="@string/year"
+                    android:imeOptions="actionNext"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/light_gray" />
+
+            </LinearLayout>
+
+            <com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout
+                android:id="@+id/cvvTIL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/fiveDp"
+                android:focusable="false"
+                android:layout_marginLeft="110dp"
+                android:layout_marginRight="110dp"
+                app:hintTextAppearance="@style/TextLabel">
+
+                <com.calibrage.payzanconsumer.framework.controls.CommonEditText
+                    android:id="@+id/cvvEdt"
+                    style="@style/EditTextStyle_modify"
+                    android:layout_width="match_parent"
+                    android:hint="@string/cvv"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberPassword"
+                    android:maxLength="3"
+                    android:nextFocusForward="@id/cardHolderEdt" />
+            </com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout>
+
+            <com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout
+                android:id="@+id/card_holder_TIL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fiveDp">
+
+                <com.calibrage.payzanconsumer.framework.controls.CommonEditText
+                    android:id="@+id/cardHolderEdt"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/card_holder_s_name"
+                    android:imeOptions="actionNext"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                    android:nextFocusForward="@id/cardLabelEdt"
+                    android:maxLength="40" />
+            </com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout>
+            <com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout
+                android:id="@+id/card_label_TIL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fiveDp">
+                <com.calibrage.payzanconsumer.framework.controls.CommonEditText
+                    android:id="@+id/cardLabelEdt"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/edt_bottom_margin"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^*(),./-+_;:'? "
+                    android:hint="@string/card_label_optional"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:imeOptions="actionDone" />
+            </com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout>
+            <CheckBox
+                android:id="@+id/saveRB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/save_this_card_for_further_transaction" />
+
+            <com.calibrage.payzanconsumer.framework.controls.CommonButton
+                android:id="@+id/payBtn"
+                style="@style/ButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/pay_now" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/savecardslock" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/mToolbar"
+        layout="@layout/main_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mToolbar">
+
+        <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/mToolbar"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/moneyLay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/thirtyDp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="@string/select_an_option_to_pay"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_FontSize" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:paddingLeft="@dimen/img_paddingLeft"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_sri_lanka_rupee_currency_symbol" />
+
+                <TextView
+                    android:id="@+id/amountTxt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:text="210 /-"
+                    android:layout_marginRight="10dp"
+                    android:paddingRight="@dimen/img_paddingRight"
+                    android:textColor="@color/btnNormalColor"
+                    android:textSize="@dimen/txt_FontSize" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/moneyLay"
+                android:background="@color/gray" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/Lst_PaymentMethods"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view"
+                android:layout_marginTop="15dp"
+                android:visibility="visible" />
+
+            <FrameLayout
+                android:id="@+id/content_frame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Lst_PaymentMethods"
+                android:layout_margin="@dimen/fiveDp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="@dimen/fiveDp"
+                android:background="@drawable/border_accent" />
+
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginLeft="8dp"-->
+            <!--android:layout_marginRight="8dp"-->
+            <!--android:orientation="vertical"-->
+            <!--android:weightSum="7">-->
+
+            <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="0dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginTop="5dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_weight=".5"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:orientation="horizontal">&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="40dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_weight="2"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:gravity="center_vertical"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="Select an option to Pay"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="@color/black"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textSize="@dimen/txt_FontSize" />&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/amountTxt"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="40dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_gravity="end"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:gravity="center_vertical"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="210 /-"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="@color/btnNormalColor"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textSize="@dimen/txt_FontSize" />&ndash;&gt;-->
+            <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="2dp"-->
+            <!--android:background="@color/gray" />-->
+
+            <!--&lt;!&ndash;<android.support.v7.widget.RecyclerView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/Lst_PaymentMethods"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="0dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginTop="15dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_weight="1.5"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:visibility="visible" />&ndash;&gt;-->
+
+            <!--<FrameLayout-->
+            <!--android:id="@+id/content_frame"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_marginBottom="5dp"-->
+            <!--android:layout_marginTop="@dimen/fiveDp"-->
+            <!--android:layout_weight="5"-->
+            <!--android:background="@drawable/border_accent" />-->
+
+            <!--</LinearLayout>-->
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

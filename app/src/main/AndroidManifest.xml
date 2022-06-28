@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.calibrage.payzanconsumer">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".framework.util.SmsReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".notifications.MyFirebaseInstanceIDService"
+            android:exported="true"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".notifications.MyFireBaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+
+        <activity
+            android:name=".activity.SigUpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/profileThem" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/profileThem"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name=".activity.MyorderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/profileThem"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name=".activity.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/profileThem"
+            android:windowSoftInputMode="adjustPan|adjustResize">
+
+
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+
+
+        </activity>
+        <!-- <activity -->
+        <!-- android:name=".fragments.AddMoneyToWallet" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateVisible|adjustPan" -->
+        <!-- android:theme="@style/actionbarTheme" -->
+        <!-- android:label="Add Money to Wallet"> -->
+
+
+        <!-- </activity> -->
+        <activity
+            android:name=".activity.SendMoney"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <!-- <activity -->
+        <!-- android:name=".activities.PayDTHFragment" -->
+        <!-- android:label="DTH Bill Payment" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:theme="@style/actionbarTheme" -->
+        <!-- android:windowSoftInputMode="stateVisible|adjustResize"> -->
+
+
+        <!-- </activity> -->
+        <!-- <activity -->
+
+
+        <!-- android:name=".fragments.PayElectrictyFragment" -->
+        <!-- android:label="Electricity Bill Payment" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:theme="@style/actionbarTheme" -->
+        <!-- android:windowSoftInputMode="stateVisible|adjustResize"> -->
+
+
+        <!-- </activity> -->
+        <!-- <activity -->
+        <!-- android:name=".activities.PayLandLineBill" -->
+        <!-- android:label="Mobile Recharge and Pay Bill" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:theme="@style/actionbarTheme" -->
+        <!-- android:windowSoftInputMode="stateVisible|adjustResize"> -->
+
+
+        <!-- </activity> -->
+        <!-- <activity -->
+        <!-- android:name=".activities.MobileRecharge" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateVisible|adjustResize"> -->
+
+
+        <!-- </activity> -->
+        <activity
+            android:name=".activity.RequestForAgent"
+            android:label="Request For Agent"
+            android:screenOrientation="portrait"
+            android:theme="@style/actionbarTheme"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <!-- <activity -->
+        <!-- android:name=".activities.DemoScreen" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:theme="@style/profileThem" -->
+        <!-- android:windowSoftInputMode="stateVisible|adjustResize"> -->
+
+
+        <!-- /> -->
+        <!-- </activity> -->
+
+        <activity
+            android:name=".activity.UpdatePasswordActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity android:name=".activity.BarcodeReader_Activity" />
+        <activity android:name=".framework.util.Barcode.BarcodeCaptureActivity" />
+        <activity android:name=".Agent.AgentLoginActivity" />
+        <activity android:name=".Consumer.ConsumerLoginActivity" />
+        <activity android:name=".Consumer.ConsumerProfileActivity" />
+        <activity android:name=".activity.Language">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".activity.AboutUSActivity"
+            android:theme="@style/profileThem" />
+        <activity
+            android:name=".activity.SaveCardActivity"
+            android:theme="@style/profileThem" />
+        <activity
+            android:name=".activity.AddCardActivity"
+            android:theme="@style/profileThem" />
+        <activity
+            android:name=".activity.OrderHistoryActivity"
+            android:theme="@style/profileThem" />
+        <activity
+            android:name=".activity.TermsofServiceActivity"
+            android:theme="@style/profileThem" />
+        <activity
+            android:name=".activity.ChangePasswordActivity"
+            android:theme="@style/profileThem" />
+        <activity
+            android:name=".activity.ProfileActivity1"
+            android:theme="@style/profileThem" />
+        <activity
+            android:name=".activity.MobileRechargeActivity"
+            android:theme="@style/profileThem" />
+        <activity
+            android:name=".activity.LandLineActivity"
+            android:theme="@style/profileThem" />
+        <activity
+            android:name=".activity.DTHActivity"
+            android:theme="@style/profileThem" />
+        <activity
+            android:name=".activity.BroadbandActivity"
+            android:theme="@style/profileThem" />
+        <activity
+            android:name=".activity.CabletvActivity"
+            android:theme="@style/profileThem" />
+        <activity
+            android:name=".activity.ElectricityActivity"
+            android:theme="@style/profileThem" />
+        <activity
+            android:name=".activity.WaterActivity"
+            android:theme="@style/profileThem" />
+        <activity
+            android:name=".activity.LoginViaPaymentActivity"
+            android:theme="@style/profileThem" />
+        <activity
+            android:name=".activity.DataCardActivity"
+            android:theme="@style/profileThem" />
+        <activity
+
+            android:name=".activity.CompletePayment"
+            android:windowSoftInputMode="adjustPan|adjustResize"
+            android:theme="@style/profileThem"/>
+        <activity
+            android:name=".activity.AddAddress"
+            android:theme="@style/profileThem" />
+        <activity
+            android:name=".activity.AddNewAddressActivity"
+            android:theme="@style/profileThem" />
+        <activity android:name=".activity.HelpSupport"
+            android:theme="@style/profileThem" />
+        <activity android:name=".activity.SupportActivitys"
+            android:theme="@style/profileThem"  />
+
+        <activity
+            android:name=".activity.FinalPaymentActivity"
+            android:theme="@style/profileThem">
+
+        </activity>
+        <activity
+            android:name=".activity.OffersTabActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ChooseLanguageActivity"
+            android:screenOrientation="portrait" />
+
+        <receiver android:name=".framework.networkservices.RefreshToken">
+            <intent-filter>
+                <action android:name="com.PayZan.CUSTOM_INTENT" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

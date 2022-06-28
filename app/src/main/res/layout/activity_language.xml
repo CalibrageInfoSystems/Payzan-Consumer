@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.calibrage.payzanconsumer.activity.Language">
+
+    <com.calibrage.payzanconsumer.framework.controls.CommonTextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edt_height"
+        android:background="@color/DarkRed"
+        android:gravity="center"
+        android:text="@string/lang" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:gravity="center">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/rdo_english"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rdo_height"
+                android:layout_margin="10dp"
+                android:text="English"
+                android:textAllCaps="false"
+                android:textSize="@dimen/edt_FontSize" />
+
+            <RadioButton
+                android:id="@+id/rdo_telugu"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rdo_height"
+                android:layout_margin="10dp"
+                android:text="Telugu / తెలుగు"
+                android:textAllCaps="false"
+                android:textSize="@dimen/edt_FontSize" />
+
+            <RadioButton
+                android:id="@+id/rdo_hindhi"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rdo_height"
+                android:layout_margin="10dp"
+                android:text="Hindi / हिंदी "
+                android:textAllCaps="false"
+                android:textSize="@dimen/edt_FontSize" />
+
+            <RadioButton
+                android:id="@+id/rdo_sinhala"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rdo_height"
+                android:layout_margin="10dp"
+                android:text="Sinhala / සිංහල"
+                android:textAllCaps="false"
+                android:textSize="@dimen/edt_FontSize" />
+
+            <RadioButton
+                android:id="@+id/rdo_tamil"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rdo_height"
+                android:layout_margin="10dp"
+                android:text="Tamil / தமிழ் "
+                android:textAllCaps="false"
+                android:textSize="@dimen/edt_FontSize" />
+
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <com.calibrage.payzanconsumer.framework.controls.CommonButton
+        android:id="@+id/btn_continue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginLeft="@dimen/lyt_home_margin_left"
+        android:layout_marginRight="@dimen/lyt_home_margin_right"
+        android:background="@drawable/roundbutton"
+        android:text="@string/contin"
+        android:textAllCaps="false"
+        android:textColor="@color/white_new" />
+</LinearLayout>

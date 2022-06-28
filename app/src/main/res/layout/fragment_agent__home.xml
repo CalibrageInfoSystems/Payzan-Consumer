@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/bottom_nav_height"
+    android:background="#FFFFFF"
+    android:fitsSystemWindows="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/id_appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/home_logo"
+                android:scaleType="center" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:background="@color/accent"
+                app:layout_scrollFlags="enterAlways"
+                app:title=""
+                app:titleTextColor="@color/accent"></android.support.v7.widget.Toolbar>
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/money"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/header_home_background"
+            android:layout_below="@+id/id_appbar"
+            android:layout_marginLeft="@dimen/lyt_home_margin_left"
+            android:layout_marginRight="@dimen/lyt_home_margin_right"
+            android:layout_marginTop="@dimen/lyt_home_margin_top"
+            android:background="@color/new_back"
+            android:visibility="gone">
+
+            <com.calibrage.payzanconsumer.framework.controls.CommonTextView
+                android:id="@+id/walletTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView"
+                android:layout_alignBottom="@+id/textView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="@dimen/eigteen"
+                android:layout_marginRight="@dimen/eigteen"
+                android:background="@drawable/border_fillcompletely"
+                android:paddingBottom="@dimen/twoDp"
+                android:paddingLeft="@dimen/eightDp"
+                android:paddingRight="@dimen/eightDp"
+                android:paddingTop="@dimen/twoDp"
+                android:text="100"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tweleveDP" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/layout_marin_right"
+                android:text="PAYZAN WALLET"
+                android:textColor="@color/black"
+                android:textSize="@dimen/header_text_size" />
+
+        </RelativeLayout>
+
+
+       <!-- <LinearLayout
+
+            android:id="@+id/moneymain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/money"
+            android:layout_marginLeft="@dimen/lyt_home_margin_left"
+            android:layout_marginRight="@dimen/lyt_home_margin_right"
+            android:layout_marginTop="@dimen/lyt_home_margin_top"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            &lt;!&ndash;<android.support.v7.widget.CardView&ndash;&gt;
+            &lt;!&ndash;android:layout_width="0dp"&ndash;&gt;
+            &lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;
+            &lt;!&ndash;android:layout_gravity="center"&ndash;&gt;
+            &lt;!&ndash;android:layout_weight="1"&ndash;&gt;
+            &lt;!&ndash;&gt;&ndash;&gt;
+
+            &lt;!&ndash;<LinearLayout&ndash;&gt;
+            &lt;!&ndash;android:layout_width="@dimen/hunderedDp"&ndash;&gt;
+            &lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;
+            &lt;!&ndash;android:layout_gravity="center"&ndash;&gt;
+            &lt;!&ndash;android:background="@drawable/border_accentcolor_button"&ndash;&gt;
+            &lt;!&ndash;android:orientation="vertical"&ndash;&gt;
+            &lt;!&ndash;android:paddingBottom="@dimen/eightDp"&ndash;&gt;
+            &lt;!&ndash;android:paddingLeft="@dimen/lyt_margin_left"&ndash;&gt;
+            &lt;!&ndash;android:paddingRight="@dimen/layout_marin_left"&ndash;&gt;
+            &lt;!&ndash;android:paddingTop="@dimen/eightDp">&ndash;&gt;
+
+            &lt;!&ndash;<ImageView&ndash;&gt;
+            &lt;!&ndash;android:id="@+id/imageView"&ndash;&gt;
+            &lt;!&ndash;android:layout_width="@dimen/twentyFiveDP"&ndash;&gt;
+            &lt;!&ndash;android:layout_height="@dimen/twentyFiveDP"&ndash;&gt;
+            &lt;!&ndash;android:layout_gravity="center"&ndash;&gt;
+            &lt;!&ndash;app:srcCompat="@drawable/ic_pay_send" />&ndash;&gt;
+
+            &lt;!&ndash;<TextView&ndash;&gt;
+            &lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;
+            &lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;
+            &lt;!&ndash;android:layout_gravity="center"&ndash;&gt;
+            &lt;!&ndash;android:maxLines="1"&ndash;&gt;
+            &lt;!&ndash;android:text="Pay/send"&ndash;&gt;
+            &lt;!&ndash;android:textColor="@color/black"&ndash;&gt;
+            &lt;!&ndash;android:textSize="@dimen/tenSP" />&ndash;&gt;
+
+
+            &lt;!&ndash;</LinearLayout>&ndash;&gt;
+            &lt;!&ndash;</android.support.v7.widget.CardView>&ndash;&gt;
+
+            &lt;!&ndash;<android.support.v7.widget.CardView&ndash;&gt;
+            &lt;!&ndash;android:layout_width="0dp"&ndash;&gt;
+            &lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;
+            &lt;!&ndash;android:layout_gravity="center"&ndash;&gt;
+            &lt;!&ndash;android:layout_weight="1">&ndash;&gt;
+
+            &lt;!&ndash;<LinearLayout&ndash;&gt;
+            &lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;
+            &lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;
+            &lt;!&ndash;android:layout_gravity="center"&ndash;&gt;
+            &lt;!&ndash;android:background="@drawable/border_accentcolor_button"&ndash;&gt;
+            &lt;!&ndash;android:orientation="vertical"&ndash;&gt;
+            &lt;!&ndash;android:paddingBottom="@dimen/eightDp"&ndash;&gt;
+            &lt;!&ndash;android:paddingLeft="@dimen/layout_marin_left"&ndash;&gt;
+            &lt;!&ndash;android:paddingRight="@dimen/layout_marin_left"&ndash;&gt;
+            &lt;!&ndash;android:paddingTop="@dimen/eightDp">&ndash;&gt;
+
+            &lt;!&ndash;<ImageView&ndash;&gt;
+            &lt;!&ndash;android:layout_width="@dimen/twentyFiveDP"&ndash;&gt;
+            &lt;!&ndash;android:layout_height="@dimen/twentyFiveDP"&ndash;&gt;
+            &lt;!&ndash;android:layout_gravity="center"&ndash;&gt;
+            &lt;!&ndash;app:srcCompat="@drawable/ic_add_withdraw" />&ndash;&gt;
+
+            &lt;!&ndash;<TextView&ndash;&gt;
+            &lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;
+            &lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;
+            &lt;!&ndash;android:maxLines="1"&ndash;&gt;
+            &lt;!&ndash;android:text="Add/withdrawal"&ndash;&gt;
+            &lt;!&ndash;android:textColor="@color/black"&ndash;&gt;
+            &lt;!&ndash;android:textSize="@dimen/tenSP"/>&ndash;&gt;
+
+
+            &lt;!&ndash;</LinearLayout>&ndash;&gt;
+            &lt;!&ndash;</android.support.v7.widget.CardView>&ndash;&gt;
+
+            &lt;!&ndash;<android.support.v7.widget.CardView&ndash;&gt;
+            &lt;!&ndash;android:layout_width="0dp"&ndash;&gt;
+            &lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;
+            &lt;!&ndash;android:layout_gravity="center"&ndash;&gt;
+            &lt;!&ndash;android:layout_weight="1">&ndash;&gt;
+
+            &lt;!&ndash;<LinearLayout&ndash;&gt;
+            &lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;
+            &lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;
+            &lt;!&ndash;android:layout_gravity="center"&ndash;&gt;
+            &lt;!&ndash;android:background="@drawable/border_accentcolor_button"&ndash;&gt;
+            &lt;!&ndash;android:orientation="vertical"&ndash;&gt;
+            &lt;!&ndash;android:paddingBottom="@dimen/eightDp"&ndash;&gt;
+            &lt;!&ndash;android:paddingLeft="@dimen/layout_marin_left"&ndash;&gt;
+            &lt;!&ndash;android:paddingRight="@dimen/layout_marin_left"&ndash;&gt;
+            &lt;!&ndash;android:paddingTop="@dimen/eightDp">&ndash;&gt;
+
+            &lt;!&ndash;<ImageView&ndash;&gt;
+            &lt;!&ndash;android:layout_width="@dimen/twentyFiveDP"&ndash;&gt;
+            &lt;!&ndash;android:layout_height="@dimen/twentyFiveDP"&ndash;&gt;
+            &lt;!&ndash;android:layout_gravity="center"&ndash;&gt;
+            &lt;!&ndash;app:srcCompat="@drawable/ic_mytransactions" />&ndash;&gt;
+
+            &lt;!&ndash;<TextView&ndash;&gt;
+            &lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;
+            &lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;
+            &lt;!&ndash;android:text="My Transcation"&ndash;&gt;
+            &lt;!&ndash;android:textColor="@color/black"&ndash;&gt;
+            &lt;!&ndash;android:textSize="@dimen/tenSP"&ndash;&gt;
+            &lt;!&ndash;android:layout_gravity="bottom"/>&ndash;&gt;
+
+
+            &lt;!&ndash;</LinearLayout>&ndash;&gt;
+
+            &lt;!&ndash;</android.support.v7.widget.CardView>&ndash;&gt;
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recylerviewpay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recylerview"
+                android:layout_marginLeft="@dimen/tenDp"
+                android:layout_marginRight="@dimen/tenDp"
+                android:layout_marginTop="@dimen/fourDp"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone"></android.support.v7.widget.RecyclerView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Transaction" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_weight="1">
+
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/lyt_agent"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:weightSum="2">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/crv_transaction"
+                android:layout_width="180dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="6dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/dth_icon" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Transaction"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="60dp"/>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/crv_commissions"
+                android:layout_width="180dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="6dp"
+                >
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/dth_icon" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Commissions"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="60dp"/>
+
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:orientation="vertical"
+            android:id="@+id/lyt_agenttransaction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lyt_agent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:weightSum="2">
+
+                <android.support.v7.widget.CardView
+                    app:cardBackgroundColor="@color/btnPressedColor"
+                    android:layout_width="180dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_margin="3dp"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    <TextView
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="226"
+                        android:textSize="30dp"
+                        android:layout_gravity="center_horizontal"/>
+                    <TextView
+                        android:textColor="@color/white"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Today Transactions"
+                        />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    app:cardBackgroundColor="@color/new_blue"
+                    android:layout_width="180dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_margin="3dp"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="6dp"
+                    >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="11012"
+                            android:textSize="30dp"
+                            android:layout_gravity="center_horizontal"/>
+                        <TextView
+                            android:textColor="@color/white"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Money Collected"
+                            />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:weightSum="2">
+
+                <android.support.v7.widget.CardView
+                    app:cardBackgroundColor="@color/new_yellow"
+                    android:layout_width="180dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_margin="3dp"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="6dp">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="524"
+                            android:textSize="30dp"
+                            android:layout_gravity="center_horizontal"/>
+                        <TextView
+                            android:textColor="@color/white"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Today Commision"
+                            />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    app:cardBackgroundColor="#FB4EDF6D"
+                    android:layout_width="180dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_margin="3dp"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="6dp"
+                    >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1929"
+                            android:textSize="30dp"
+                            android:layout_gravity="center_horizontal"/>
+                        <TextView
+                            android:textColor="@color/white"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Commision"
+                            />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+        </LinearLayout>
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lyt_agenttransaction">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    android:id="@+id/recharge"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/header_home_background"
+                    android:layout_marginLeft="@dimen/eightDp"
+                    android:layout_marginRight="@dimen/eightDp"
+                    android:layout_marginTop="@dimen/eightDp"
+                    android:background="@color/new_back">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/tweleveDP"
+                        android:text="RECHARGE AND BILL PAYMENTS"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/header_text_size" />
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recylerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/recharge"
+                    android:layout_marginLeft="@dimen/lyt_margin_left"
+                    android:layout_marginRight="@dimen/lyt_home_margin_right"
+                    android:layout_marginTop="@dimen/lyt_home_margin_top"
+                    android:nestedScrollingEnabled="false"></android.support.v7.widget.RecyclerView>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recylerviewbanner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/recylerview"
+                    android:layout_marginLeft="@dimen/fifteen"
+                    android:layout_marginRight="@dimen/fifteen"
+                    android:layout_marginTop="@dimen/fourDp"
+                    android:nestedScrollingEnabled="false"></android.support.v7.widget.RecyclerView>
+
+                <RelativeLayout
+                    android:id="@+id/bookrecharge"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/header_home_background"
+                    android:layout_below="@+id/recylerviewbanner"
+                    android:layout_marginLeft="@dimen/eightDp"
+                    android:layout_marginRight="@dimen/eightDp"
+                    android:layout_marginTop="@dimen/eightDp"
+                    android:background="@color/new_back"
+                    android:visibility="gone">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="12dp"
+                        android:text="BOOK ON PAYZAN"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/header_text_size" />
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recylerviewbook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bookrecharge"
+                    android:layout_marginLeft="@dimen/fifteen"
+                    android:layout_marginRight="@dimen/fifteen"
+                    android:layout_marginTop="@dimen/fourDp"
+                    android:nestedScrollingEnabled="false"
+                    android:visibility="gone"></android.support.v7.widget.RecyclerView>
+
+                <TextView
+                    android:id="@+id/AgentRequestTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/recylerviewbook"
+                    android:layout_margin="@dimen/eightDp"
+                    android:gravity="center"
+                    android:text="Partner with Payzan"
+                    android:textColor="@color/accent" />
+
+            </RelativeLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

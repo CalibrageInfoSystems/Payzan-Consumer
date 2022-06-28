@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.calibrage.payzanconsumer.activity.SupportActivitys">
+
+    <include
+        android:id="@+id/mainlayout"
+        layout="@layout/main_header"
+        />
+<!--
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_img_height"
+            android:gravity="center"
+            android:src="@mipmap/home_logo"
+            android:background="@mipmap/home_logo"
+            android:layout_marginBottom="-10dp"
+            />
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height"
+            android:background="@color/accent"
+            app:layout_scrollFlags="enterAlways"
+            app:title="payzan"
+            app:titleTextColor="@color/accent"
+            app:titleTextAppearance="@style/Toolbar.TitleText">
+        </android.support.v7.widget.Toolbar>-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt"
+        android:layout_below="@+id/include"/>
+
+</LinearLayout>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_new"
+    android:id="@+id/linear_lyt"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/main_header" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <include
+            android:id="@+id/mainlayout"
+            layout="@layout/main_header"
+            android:visibility="gone" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/mainlayout"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/lyt_margin">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/prepaidRB"
+                        android:layout_width="@dimen/rdo_width"
+                        android:layout_height="@dimen/rdo_height"
+                        android:layout_margin="@dimen/rdo_margin"
+                        android:button="@drawable/radio_btn"
+                        android:text="@string/prepaid"
+                        android:textColor="@color/accent"
+                        android:textSize="@dimen/edt_FontSize" />
+
+                    <RadioButton
+                        android:id="@+id/postpaidRB"
+                        android:layout_width="@dimen/rdo_width"
+                        android:layout_height="@dimen/rdo_height"
+                        android:layout_margin="@dimen/rdo_margin"
+                        android:button="@drawable/radio_btn"
+                        android:text="@string/postpaid"
+                        android:textColor="@color/accent"
+                        android:textSize="@dimen/edt_FontSize" />
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/radioGroup"
+                    android:orientation="vertical">
+
+
+                    <com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout
+
+                        android:id="@+id/mobileNumberTXT"
+                        android:layout_width="match_parent"
+                        app:hintTextAppearance="@style/TextLabel"
+                        android:layout_height="wrap_content">
+
+                        <com.calibrage.payzanconsumer.framework.controls.CommonEditText
+                            android:id="@+id/mobileEdt"
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/edt_height"
+                            android:background="@drawable/roundededittext"
+                            android:drawableRight="@drawable/prepaid_contacts_icon"
+                            android:gravity="center_vertical"
+                            android:maxLength="13"
+                            android:hint="@string/mobile_number"
+                            android:paddingLeft="@dimen/btn_register_margin"
+                            android:imeOptions="actionNext"
+                            android:inputType="numberDecimal" />
+                    </com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout>
+
+                    <ImageView
+                        android:id="@+id/mobileNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="@dimen/tenDp"
+                        android:visibility="gone" />
+
+                    <com.calibrage.payzanconsumer.framework.controls.CommonTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/twentyDP"
+                        android:gravity="bottom"
+                        android:paddingLeft="@dimen/fiveDp"
+                        android:text="@string/select_operator"
+                        android:textSize="@dimen/edt_hint_FontSize"
+                        android:textColor="@color/accent"
+
+
+
+                        />
+
+                    <FrameLayout
+                        android:id="@+id/first"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout
+                            android:id="@+id/operatorTXT"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <Spinner
+                                android:id="@+id/currentOperator"
+                                style="@style/EditTextStyle"
+
+                                android:layout_width="match_parent"
+                                android:hint="@string/current_operator"
+                                android:imeOptions="actionNext"
+                                android:paddingLeft="@dimen/edt_text_pading_left" />
+                        </com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout>
+
+                        <com.calibrage.payzanconsumer.framework.controls.CommonTextView
+                            android:id="@+id/updateOperatorId"
+                            style="@style/InnerEditTextView"
+                            android:layout_gravity="center_horizontal|end"
+                            android:paddingTop="@dimen/tweleveDP"
+                            android:text="@string/update_operator"
+                            android:textColor="@color/accent" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/first6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout
+                            android:id="@+id/amountTXT"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:hintTextAppearance="@style/TextLabel"
+                            android:layout_marginTop="7dp">
+
+                            <com.calibrage.payzanconsumer.framework.controls.CommonEditText
+                                android:id="@+id/amount"
+                                style="@style/EditTextStyle_modify"
+                                android:layout_width="match_parent"
+                                android:hint="@string/amount"
+                                android:imeOptions="actionDone"
+                                android:inputType="number"
+                                android:maxLength="6"/>
+
+                        </com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout>
+
+                        <com.calibrage.payzanconsumer.framework.controls.CommonTextView
+                            android:id="@+id/browsePlans"
+                            style="@style/InnerEditTextView"
+                            android:text="@string/browse_plans"
+                            android:paddingTop="@dimen/tweleveDP_plan"
+                            android:layout_gravity="center_vertical|end"
+                            android:textColor="@color/accent" />
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:id="@+id/rechageTypeRadioGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/lyt_margin_right"
+                        android:layout_marginTop="@dimen/btn_margin_top_mobile_rechagre"
+                        android:background="@drawable/border_accent"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="1dp">
+
+                        <com.calibrage.payzanconsumer.framework.controls.CommonButton
+                            android:id="@+id/talktimeRB"
+                            style="@android:style/Widget.Holo.Button.Borderless.Small"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/btn1_height"
+                            android:text="@string/talktime_topup"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/btn1_font" />
+
+                        <com.calibrage.payzanconsumer.framework.controls.CommonButton
+                            android:id="@+id/specialRB"
+                            style="@android:style/Widget.Holo.Button.Borderless.Small"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/btn1_height"
+                            android:text="@string/special_recharge"
+                            android:textSize="@dimen/btn1_font" />
+                    </LinearLayout>
+
+
+                    <com.calibrage.payzanconsumer.framework.controls.CommonButton
+                        android:id="@+id/submit"
+                        style="@style/ButtonStyle"
+                        android:layout_marginTop="@dimen/btn_margin_top"
+                        android:background="@drawable/roundbutton"
+                        android:imeOptions="actionSend"
+                        android:text="@string/proceed_to_recharge"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+    </RelativeLayout>
+</LinearLayout>

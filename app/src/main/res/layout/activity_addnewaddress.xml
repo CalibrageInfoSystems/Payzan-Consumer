@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.calibrage.payzanconsumer.activity.AddNewAddressActivity">
+
+    <include layout="@layout/main_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/mainLay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/submit"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/lyt_home_margin_right"
+                android:layout_marginRight="@dimen/lyt_home_margin_right"
+                android:orientation="vertical">
+
+                <com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout
+                    android:id="@+id/nameTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@style/TextLabel">
+
+                    <com.calibrage.payzanconsumer.framework.controls.CommonEditText
+                        android:id="@+id/txt_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edt_height"
+                        android:background="@drawable/roundededittext"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                        android:hint="@string/names"
+                        android:imeOptions="actionNext"
+                        android:inputType="textNoSuggestions"
+                        android:maxLength="40"
+                        android:paddingLeft="@dimen/edt_text_pading_left"
+                        android:singleLine="true" />
+                </com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout>
+
+                <com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout
+                    android:id="@+id/addressTxt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fiveDp"
+                    app:hintTextAppearance="@style/TextLabel">
+
+                    <com.calibrage.payzanconsumer.framework.controls.CommonEditText
+                        android:id="@+id/txt_address1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edt_height"
+                        android:background="@drawable/roundededittext"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^*(),./-+_;:'? "
+                        android:hint="@string/addressline1"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLength="40"
+                        android:paddingLeft="@dimen/edt_text_pading_left"
+                        android:singleLine="true" />
+                </com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout>
+
+                <com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout
+                    android:id="@+id/addressTxt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fiveDp"
+                    app:hintTextAppearance="@style/TextLabel">
+
+                    <com.calibrage.payzanconsumer.framework.controls.CommonEditText
+                        android:id="@+id/txt_address2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edt_height"
+                        android:background="@drawable/roundededittext"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^*(),./-+_;:'? "
+                        android:hint="@string/addressline2"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLength="40"
+                        android:paddingLeft="@dimen/edt_text_pading_left"
+                        android:singleLine="true" />
+                </com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout>
+
+                <com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout
+                    android:id="@+id/landmarkTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fiveDp"
+                    app:hintTextAppearance="@style/TextLabel">
+
+                    <com.calibrage.payzanconsumer.framework.controls.CommonEditText
+                        android:id="@+id/txt_landmark"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edt_height"
+                        android:background="@drawable/roundededittext"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^*(),./-+_;'? "
+                        android:hint="@string/landmark"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLength="40"
+                        android:paddingLeft="@dimen/edt_text_pading_left"
+                        android:singleLine="true" />
+                </com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout>
+
+                <com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout
+                    android:id="@+id/mobileTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fiveDp"
+                    app:hintTextAppearance="@style/TextLabel">
+
+                    <com.calibrage.payzanconsumer.framework.controls.CommonEditText
+                        android:id="@+id/txt_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edt_height"
+                        android:background="@drawable/roundededittext"
+                        android:digits="0123456789"
+                        android:hint="@string/mobile_number"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal"
+                        android:maxLength="10"
+                        android:paddingLeft="@dimen/edt_text_pading_left"
+                        android:singleLine="true" />
+                </com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fiveDp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:paddingLeft="5dp"
+                        android:text="@string/select_province"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/spn_txt_FontSize" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/roundededittext">
+
+
+                        <Spinner
+                            android:id="@+id/provinceSpin"
+                            style="@style/Widget.AppCompat.DropDownItem.Spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edt_height" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fiveDp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:paddingLeft="5dp"
+                        android:text="@string/select_district"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/spn_txt_FontSize" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/roundededittext">
+
+
+                        <Spinner
+                            android:id="@+id/districtSpin"
+                            style="@style/Widget.AppCompat.DropDownItem.Spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edt_height" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fiveDp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:paddingLeft="5dp"
+                        android:text="@string/select_mandal"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/spn_txt_FontSize" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/roundededittext">
+
+
+                        <Spinner
+                            android:id="@+id/mandalSpin"
+                            style="@style/Widget.AppCompat.DropDownItem.Spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edt_height" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fiveDp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:paddingLeft="5dp"
+                        android:text="@string/select_village"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/spn_txt_FontSize" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/roundededittext">
+
+
+                        <Spinner
+                            android:id="@+id/villageSpin"
+                            style="@style/Widget.AppCompat.DropDownItem.Spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edt_height" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout
+                    android:id="@+id/pincodeTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fiveDp"
+                    app:hintTextAppearance="@style/TextLabel">
+
+                    <com.calibrage.payzanconsumer.framework.controls.CommonEditText
+                        android:id="@+id/txt_pincode"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edt_height"
+                        android:background="@drawable/roundededittext"
+                        android:focusable="false"
+                        android:hint="@string/pin_codes"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="@dimen/edt_text_pading_left" />
+                </com.calibrage.payzanconsumer.framework.util.NCBTextInputLayout>
+
+
+            </LinearLayout>
+
+            <com.calibrage.payzanconsumer.framework.controls.CommonButton
+                android:id="@+id/submit"
+                style="@style/ButtonStyle"
+                android:layout_marginBottom="100dp"
+                android:imeOptions="actionSend"
+                android:text="@string/add_address"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

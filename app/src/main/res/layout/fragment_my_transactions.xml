@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_twenty"
+            android:layout_marginRight="@dimen/margin_right_twenty"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+            <!--        <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                      android:id="@+id/recylerview_transaction"
+                        android:layout_marginBottom="4dp">
+                    </android.support.v7.widget.RecyclerView>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/lyt_margin_bottom"
+                android:layout_marginTop="@dimen/lyt_margin_top"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_all"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_accent"
+                    android:text="@string/all"
+                    android:textAllCaps="false"
+                    android:textColor="@color/Maroon" />
+
+                <Button
+                    android:id="@+id/btn_paid"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/btn_register_margin"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_accent"
+                    android:text="@string/paid"
+                    android:textAllCaps="false"
+                    android:textColor="@color/Maroon" />
+
+                <Button
+                    android:id="@+id/btn_received"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/btn_register_margin"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_accent"
+                    android:text="@string/received"
+                    android:textAllCaps="false"
+                    android:textColor="@color/Maroon" />
+
+                <Button
+                    android:id="@+id/btn_added"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/btn_register_margin"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_accent"
+                    android:text="@string/added"
+                    android:textAllCaps="false"
+                    android:textColor="@color/Maroon" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/no_records"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_no_records"
+                android:gravity="center"
+                android:text="@string/no_records_found"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recylerview_transactions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/lyt_margin_top" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

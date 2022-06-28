@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.calibrage.payzanconsumer.activity.AddAddress">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/main_header" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/addressrecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_addnewAddress"
+        android:layout_below="@+id/include"
+        android:layout_margin="@dimen/fiveDp"
+         />
+
+    <TextView
+        android:id="@+id/no_items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:text="No Address Found"
+        android:visibility="gone" />
+
+
+    <com.calibrage.payzanconsumer.framework.controls.CommonButton
+        android:id="@+id/btn_addnewAddress"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/btn_margin"
+        android:background="@drawable/roundbutton"
+        android:text="@string/add_new_address"
+        android:textAllCaps="false"
+        android:textColor="@color/white_new" />
+
+</RelativeLayout>

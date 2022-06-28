@@ -1,0 +1,164 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/accent</item>
+    </style>
+    <style name="profileThem" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/accent</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:actionMenuTextColor">@color/white</item>
+    </style>
+    <style name="actionbarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/accent</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+    <style name="datepicker" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/accent</item>
+        <item name="colorPrimaryDark">@color/accent</item>
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+    <style name="TextLabelm" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/red</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:background">@drawable/roundededittext</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/red</item>
+        <item name="colorControlNormal">@color/red</item>
+        <item name="colorControlActivated">@color/red</item>
+    </style>
+
+
+    <style name="TextLabel" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">@dimen/edt_hint_FontSize</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="Theme.Transparent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="AppTheme.Dialogt" parent="Base.Theme.AppCompat.Light.Dialog.FixedSize">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="FacebookLoginButton">
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="EditTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/edt_height</item>
+        <item name="android:background">@drawable/border_edit_text</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:inputType">text</item>
+        <item name="android:lines">1</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColorHint">@color/light_gray</item>
+        <item name="android:textSize">@dimen/edt_FontSize</item>
+        <item name="android:paddingStart">@dimen/edt_text_pading_left</item>
+    </style>
+
+    <style name="EditTextStyle_modify">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/edt_height</item>
+        <item name="android:background">@drawable/border_edit_text</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:inputType">text</item>
+        <item name="android:lines">1</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColorHint">@color/light_gray</item>
+        <item name="android:textSize">@dimen/edt_FontSize</item>
+        <item name="android:paddingStart">@dimen/btn_register_margin</item>
+
+        <!--<item name="android:layout_marginBottom">@dimen/layout_marin_bottom</item>-->
+    </style>
+    <style name="InnerEditTextView">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">right|center_vertical</item>
+        <item name="android:layout_marginRight">@dimen/text_size_inner_edit_text</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/accent</item>
+        <item name="android:textSize">@dimen/text_size_inner_edit_text</item>
+    </style>
+    <style name="ButtonStyle">
+        <item name="android:textSize">@dimen/btn_FontSize</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/btn_height</item>
+        <item name="android:background">@drawable/roundbutton</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_margin">@dimen/fourDp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">@dimen/toolbar_text_size</item>
+
+    </style>
+
+    <style name="SearchViewTheme" parent="Widget.AppCompat.Light.SearchView">
+        <item name="android:maxWidth">10000dp</item>
+        <item name="android:textColorHint">@android:color/white</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/MyCustomTextAppearance</item>
+    </style>
+
+    <style name="MyCustomTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+
+
+    </style>
+
+    <style name="MyTabTextAppearance" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textSize">@dimen/tab_txt_size</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="textAllCaps">false</item>
+    </style>\
+
+
+
+    <style name="AddMoneyTxt">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/txt_money_margin</item>
+        <item name="android:padding">@dimen/txt_money_padding</item>
+        <item name="android:textColor">@color/accent</item>
+        <item name="android:textSize">@dimen/txt_money_size</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/add_money_bcg</item>
+
+    </style>
+</resources>
